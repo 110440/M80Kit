@@ -10,4 +10,10 @@
 
 @interface NSString (M80)
 - (NSString *)m80MD5;
+
+- (NSString *)m80Trim;
+
+- (NSString *)m80StringByURLEncoding;
+
+- (NSUInteger)m80GBKBytesLength;
 @end

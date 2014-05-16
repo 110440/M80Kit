@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E40AE74C1925E2F80062F86D /* NSFileManager+M80.m in Sources */ = {isa = PBXBuildFile; fileRef = E40AE74B1925E2F80062F86D /* NSFileManager+M80.m */; };
+		E40AE7501925EC600062F86D /* FileManagerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E40AE74F1925EC600062F86D /* FileManagerTests.m */; };
+		E40AE7531925EDA10062F86D /* test.txt in Resources */ = {isa = PBXBuildFile; fileRef = E40AE7521925EDA10062F86D /* test.txt */; };
+		E40AE7541925EE450062F86D /* NSFileManager+M80.m in Sources */ = {isa = PBXBuildFile; fileRef = E40AE74B1925E2F80062F86D /* NSFileManager+M80.m */; };
 		E472EBCF1925B10000FD15F3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E472EBCE1925B10000FD15F3 /* Foundation.framework */; };
 		E472EBD41925B10000FD15F3 /* M80Kit.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = E472EBD31925B10000FD15F3 /* M80Kit.h */; };
 		E472EBD61925B10000FD15F3 /* M80Kit.m in Sources */ = {isa = PBXBuildFile; fileRef = E472EBD51925B10000FD15F3 /* M80Kit.m */; };
@@ -52,6 +56,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		E40AE74A1925E2F80062F86D /* NSFileManager+M80.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSFileManager+M80.h"; sourceTree = "<group>"; };
+		E40AE74B1925E2F80062F86D /* NSFileManager+M80.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSFileManager+M80.m"; sourceTree = "<group>"; };
+		E40AE74F1925EC600062F86D /* FileManagerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FileManagerTests.m; sourceTree = "<group>"; };
+		E40AE7521925EDA10062F86D /* test.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = test.txt; sourceTree = "<group>"; };
 		E472EBCB1925B10000FD15F3 /* libM80Kit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libM80Kit.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		E472EBCE1925B10000FD15F3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		E472EBD21925B10000FD15F3 /* M80Kit-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "M80Kit-Prefix.pch"; sourceTree = "<group>"; };
@@ -98,6 +106,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E40AE7511925EDA10062F86D /* TestResource */ = {
+			isa = PBXGroup;
+			children = (
+				E40AE7521925EDA10062F86D /* test.txt */,
+			);
+			path = TestResource;
+			sourceTree = "<group>";
+		};
 		E472EBC21925B10000FD15F3 = {
 			isa = PBXGroup;
 			children = (
@@ -150,8 +166,9 @@
 			isa = PBXGroup;
 			children = (
 				E472EBEA1925B10000FD15F3 /* M80KitTests.m */,
-				E472EBE51925B10000FD15F3 /* Supporting Files */,
 				E472EC051925B49D00FD15F3 /* NSStringTests.m */,
+				E40AE74F1925EC600062F86D /* FileManagerTests.m */,
+				E472EBE51925B10000FD15F3 /* Supporting Files */,
 			);
 			path = M80KitTests;
 			sourceTree = "<group>";
@@ -159,6 +176,7 @@
 		E472EBE51925B10000FD15F3 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				E40AE7511925EDA10062F86D /* TestResource */,
 				E472EBE61925B10000FD15F3 /* M80KitTests-Info.plist */,
 				E472EBE71925B10000FD15F3 /* InfoPlist.strings */,
 			);
@@ -185,6 +203,8 @@
 				E472EC001925B2AE00FD15F3 /* UIImage+M80.m */,
 				E472EC021925B2CF00FD15F3 /* UIView+M80.h */,
 				E472EC031925B2CF00FD15F3 /* UIView+M80.m */,
+				E40AE74A1925E2F80062F86D /* NSFileManager+M80.h */,
+				E40AE74B1925E2F80062F86D /* NSFileManager+M80.m */,
 			);
 			path = Categories;
 			sourceTree = "<group>";
@@ -259,6 +279,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E40AE7531925EDA10062F86D /* test.txt in Resources */,
 				E472EBE91925B10000FD15F3 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -270,6 +291,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E40AE74C1925E2F80062F86D /* NSFileManager+M80.m in Sources */,
 				E472EBFE1925B29100FD15F3 /* NSData+M80.m in Sources */,
 				E472EC011925B2AE00FD15F3 /* UIImage+M80.m in Sources */,
 				E472EBD61925B10000FD15F3 /* M80Kit.m in Sources */,
@@ -285,8 +307,10 @@
 				E472EC0A1925B72B00FD15F3 /* UIView+M80.m in Sources */,
 				E472EC0B1925B72F00FD15F3 /* M80Kit.m in Sources */,
 				E472EBEB1925B10000FD15F3 /* M80KitTests.m in Sources */,
+				E40AE7501925EC600062F86D /* FileManagerTests.m in Sources */,
 				E472EC061925B49D00FD15F3 /* NSStringTests.m in Sources */,
 				E472EC081925B72700FD15F3 /* NSData+M80.m in Sources */,
+				E40AE7541925EE450062F86D /* NSFileManager+M80.m in Sources */,
 				E472EC071925B72400FD15F3 /* NSString+M80.m in Sources */,
 				E472EC091925B72900FD15F3 /* UIImage+M80.m in Sources */,
 			);
@@ -461,6 +485,7 @@
 				E472EBF01925B10000FD15F3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E472EBF11925B10000FD15F3 /* Build configuration list for PBXNativeTarget "M80KitTests" */ = {
 			isa = XCConfigurationList;
@@ -469,6 +494,7 @@
 				E472EBF31925B10000FD15F3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

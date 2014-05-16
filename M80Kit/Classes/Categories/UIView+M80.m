@@ -9,5 +9,18 @@
 #import "UIView+M80.h"
 
 @implementation UIView (M80)
-
+- (UIImage *)imageFromView
+{
+    UIGraphicsBeginImageContextWithOptions(self.bounds.size, NO, [UIScreen mainScreen].scale);
+    if ([self respondsToSelector:@selector(drawViewHierarchyInRect:afterScreenUpdates:)])
+    {
+        [self drawViewHierarchyInRect:self.bounds afterScreenUpdates:NO];
+    } else
+    {
+        [self.layer renderInContext:UIGraphicsGetCurrentContext()];
+    }
+    UIImage * viewImage = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    return viewImage;
+}
 @end

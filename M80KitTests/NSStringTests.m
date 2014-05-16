@@ -30,13 +30,29 @@
 - (void)testMD5
 {
     NSString *nilString = nil;
-    NSString *emptyString = @"";
-    NSString *normalString = @"m80kit";
-    
     XCTAssertEqualObjects([nilString m80MD5], nil, @"");
-    XCTAssertEqualObjects([emptyString m80MD5], @"d41d8cd98f00b204e9800998ecf8427e", @"");
-    XCTAssertEqualObjects([normalString m80MD5], @"b4791097a8a711121d7a6669e322a87f", @"");
-    
+    XCTAssertEqualObjects([@"" m80MD5], @"d41d8cd98f00b204e9800998ecf8427e", @"");
+    XCTAssertEqualObjects([@"m80kit" m80MD5], @"b4791097a8a711121d7a6669e322a87f", @"");
+
+}
+
+- (void)testTrim
+{
+    XCTAssertEqualObjects([@"  m80kit" m80Trim], @"m80kit", @"");
+    XCTAssertEqualObjects([@"m80kit  " m80Trim],@"m80kit", @"");
+    XCTAssertEqualObjects([@" m80kit \n" m80Trim], @"m80kit", @"");
+}
+
+- (void)testGBKBytesLength
+{
+    XCTAssertEqual([@"m80kit" m80GBKBytesLength], 6, @"");
+    XCTAssertEqual([@"m80基础库" m80GBKBytesLength], 9, @"");
+}
+
+- (void)testURLEncoding
+{
+    XCTAssertEqualObjects([@"http://www.163.com" m80StringByURLEncoding], @"http%3A%2F%2Fwww.163.com", @"");
+    XCTAssertEqualObjects([@"http://weibo.com/epmao/home?wvr=5" m80StringByURLEncoding], @"http%3A%2F%2Fweibo.com%2Fepmao%2Fhome%3Fwvr%3D5", @"");
 }
 
 @end
