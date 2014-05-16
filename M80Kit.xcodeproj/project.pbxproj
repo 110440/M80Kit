@@ -1,0 +1,420 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E472EBCF1925B10000FD15F3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E472EBCE1925B10000FD15F3 /* Foundation.framework */; };
+		E472EBD41925B10000FD15F3 /* M80Kit.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = E472EBD31925B10000FD15F3 /* M80Kit.h */; };
+		E472EBD61925B10000FD15F3 /* M80Kit.m in Sources */ = {isa = PBXBuildFile; fileRef = E472EBD51925B10000FD15F3 /* M80Kit.m */; };
+		E472EBDD1925B10000FD15F3 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E472EBDC1925B10000FD15F3 /* XCTest.framework */; };
+		E472EBDE1925B10000FD15F3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E472EBCE1925B10000FD15F3 /* Foundation.framework */; };
+		E472EBE01925B10000FD15F3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E472EBDF1925B10000FD15F3 /* UIKit.framework */; };
+		E472EBE31925B10000FD15F3 /* libM80Kit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E472EBCB1925B10000FD15F3 /* libM80Kit.a */; };
+		E472EBE91925B10000FD15F3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E472EBE71925B10000FD15F3 /* InfoPlist.strings */; };
+		E472EBEB1925B10000FD15F3 /* M80KitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E472EBEA1925B10000FD15F3 /* M80KitTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E472EBE11925B10000FD15F3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E472EBC31925B10000FD15F3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E472EBCA1925B10000FD15F3;
+			remoteInfo = M80Kit;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		E472EBC91925B10000FD15F3 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+				E472EBD41925B10000FD15F3 /* M80Kit.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		E472EBCB1925B10000FD15F3 /* libM80Kit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libM80Kit.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		E472EBCE1925B10000FD15F3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		E472EBD21925B10000FD15F3 /* M80Kit-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "M80Kit-Prefix.pch"; sourceTree = "<group>"; };
+		E472EBD31925B10000FD15F3 /* M80Kit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = M80Kit.h; sourceTree = "<group>"; };
+		E472EBD51925B10000FD15F3 /* M80Kit.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = M80Kit.m; sourceTree = "<group>"; };
+		E472EBDB1925B10000FD15F3 /* M80KitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = M80KitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E472EBDC1925B10000FD15F3 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		E472EBDF1925B10000FD15F3 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		E472EBE61925B10000FD15F3 /* M80KitTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "M80KitTests-Info.plist"; sourceTree = "<group>"; };
+		E472EBE81925B10000FD15F3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		E472EBEA1925B10000FD15F3 /* M80KitTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = M80KitTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E472EBC81925B10000FD15F3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E472EBCF1925B10000FD15F3 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E472EBD81925B10000FD15F3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E472EBDD1925B10000FD15F3 /* XCTest.framework in Frameworks */,
+				E472EBE01925B10000FD15F3 /* UIKit.framework in Frameworks */,
+				E472EBE31925B10000FD15F3 /* libM80Kit.a in Frameworks */,
+				E472EBDE1925B10000FD15F3 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E472EBC21925B10000FD15F3 = {
+			isa = PBXGroup;
+			children = (
+				E472EBD01925B10000FD15F3 /* M80Kit */,
+				E472EBE41925B10000FD15F3 /* M80KitTests */,
+				E472EBCD1925B10000FD15F3 /* Frameworks */,
+				E472EBCC1925B10000FD15F3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E472EBCC1925B10000FD15F3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E472EBCB1925B10000FD15F3 /* libM80Kit.a */,
+				E472EBDB1925B10000FD15F3 /* M80KitTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E472EBCD1925B10000FD15F3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E472EBCE1925B10000FD15F3 /* Foundation.framework */,
+				E472EBDC1925B10000FD15F3 /* XCTest.framework */,
+				E472EBDF1925B10000FD15F3 /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E472EBD01925B10000FD15F3 /* M80Kit */ = {
+			isa = PBXGroup;
+			children = (
+				E472EBD31925B10000FD15F3 /* M80Kit.h */,
+				E472EBD51925B10000FD15F3 /* M80Kit.m */,
+				E472EBD11925B10000FD15F3 /* Supporting Files */,
+			);
+			path = M80Kit;
+			sourceTree = "<group>";
+		};
+		E472EBD11925B10000FD15F3 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E472EBD21925B10000FD15F3 /* M80Kit-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E472EBE41925B10000FD15F3 /* M80KitTests */ = {
+			isa = PBXGroup;
+			children = (
+				E472EBEA1925B10000FD15F3 /* M80KitTests.m */,
+				E472EBE51925B10000FD15F3 /* Supporting Files */,
+			);
+			path = M80KitTests;
+			sourceTree = "<group>";
+		};
+		E472EBE51925B10000FD15F3 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E472EBE61925B10000FD15F3 /* M80KitTests-Info.plist */,
+				E472EBE71925B10000FD15F3 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E472EBCA1925B10000FD15F3 /* M80Kit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E472EBEE1925B10000FD15F3 /* Build configuration list for PBXNativeTarget "M80Kit" */;
+			buildPhases = (
+				E472EBC71925B10000FD15F3 /* Sources */,
+				E472EBC81925B10000FD15F3 /* Frameworks */,
+				E472EBC91925B10000FD15F3 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = M80Kit;
+			productName = M80Kit;
+			productReference = E472EBCB1925B10000FD15F3 /* libM80Kit.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		E472EBDA1925B10000FD15F3 /* M80KitTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E472EBF11925B10000FD15F3 /* Build configuration list for PBXNativeTarget "M80KitTests" */;
+			buildPhases = (
+				E472EBD71925B10000FD15F3 /* Sources */,
+				E472EBD81925B10000FD15F3 /* Frameworks */,
+				E472EBD91925B10000FD15F3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E472EBE21925B10000FD15F3 /* PBXTargetDependency */,
+			);
+			name = M80KitTests;
+			productName = M80KitTests;
+			productReference = E472EBDB1925B10000FD15F3 /* M80KitTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E472EBC31925B10000FD15F3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = amao;
+			};
+			buildConfigurationList = E472EBC61925B10000FD15F3 /* Build configuration list for PBXProject "M80Kit" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = E472EBC21925B10000FD15F3;
+			productRefGroup = E472EBCC1925B10000FD15F3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E472EBCA1925B10000FD15F3 /* M80Kit */,
+				E472EBDA1925B10000FD15F3 /* M80KitTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E472EBD91925B10000FD15F3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E472EBE91925B10000FD15F3 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E472EBC71925B10000FD15F3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E472EBD61925B10000FD15F3 /* M80Kit.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E472EBD71925B10000FD15F3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E472EBEB1925B10000FD15F3 /* M80KitTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E472EBE21925B10000FD15F3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E472EBCA1925B10000FD15F3 /* M80Kit */;
+			targetProxy = E472EBE11925B10000FD15F3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E472EBE71925B10000FD15F3 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E472EBE81925B10000FD15F3 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E472EBEC1925B10000FD15F3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		E472EBED1925B10000FD15F3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E472EBEF1925B10000FD15F3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/M80Kit.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "M80Kit/M80Kit-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		E472EBF01925B10000FD15F3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/M80Kit.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "M80Kit/M80Kit-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		E472EBF21925B10000FD15F3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "M80Kit/M80Kit-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "M80KitTests/M80KitTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		E472EBF31925B10000FD15F3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "M80Kit/M80Kit-Prefix.pch";
+				INFOPLIST_FILE = "M80KitTests/M80KitTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E472EBC61925B10000FD15F3 /* Build configuration list for PBXProject "M80Kit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E472EBEC1925B10000FD15F3 /* Debug */,
+				E472EBED1925B10000FD15F3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E472EBEE1925B10000FD15F3 /* Build configuration list for PBXNativeTarget "M80Kit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E472EBEF1925B10000FD15F3 /* Debug */,
+				E472EBF01925B10000FD15F3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		E472EBF11925B10000FD15F3 /* Build configuration list for PBXNativeTarget "M80KitTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E472EBF21925B10000FD15F3 /* Debug */,
+				E472EBF31925B10000FD15F3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E472EBC31925B10000FD15F3 /* Project object */;
+}
