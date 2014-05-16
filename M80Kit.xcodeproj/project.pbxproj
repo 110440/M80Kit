@@ -17,6 +17,7 @@
 		E40AE75E1925FB470062F86D /* UIAlertView+M80.m in Sources */ = {isa = PBXBuildFile; fileRef = E40AE75C1925FB470062F86D /* UIAlertView+M80.m */; };
 		E40AE7611925FB570062F86D /* UIActionSheet+M80.m in Sources */ = {isa = PBXBuildFile; fileRef = E40AE7601925FB570062F86D /* UIActionSheet+M80.m */; };
 		E40AE7621925FB570062F86D /* UIActionSheet+M80.m in Sources */ = {isa = PBXBuildFile; fileRef = E40AE7601925FB570062F86D /* UIActionSheet+M80.m */; };
+		E40AE7661925FDD00062F86D /* M80TimerHolder.m in Sources */ = {isa = PBXBuildFile; fileRef = E40AE7651925FDD00062F86D /* M80TimerHolder.m */; };
 		E472EBCF1925B10000FD15F3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E472EBCE1925B10000FD15F3 /* Foundation.framework */; };
 		E472EBD41925B10000FD15F3 /* M80Kit.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = E472EBD31925B10000FD15F3 /* M80Kit.h */; };
 		E472EBD61925B10000FD15F3 /* M80Kit.m in Sources */ = {isa = PBXBuildFile; fileRef = E472EBD51925B10000FD15F3 /* M80Kit.m */; };
@@ -72,6 +73,9 @@
 		E40AE75C1925FB470062F86D /* UIAlertView+M80.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIAlertView+M80.m"; sourceTree = "<group>"; };
 		E40AE75F1925FB570062F86D /* UIActionSheet+M80.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIActionSheet+M80.h"; sourceTree = "<group>"; };
 		E40AE7601925FB570062F86D /* UIActionSheet+M80.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIActionSheet+M80.m"; sourceTree = "<group>"; };
+		E40AE7641925FDD00062F86D /* M80TimerHolder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = M80TimerHolder.h; sourceTree = "<group>"; };
+		E40AE7651925FDD00062F86D /* M80TimerHolder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = M80TimerHolder.m; sourceTree = "<group>"; };
+		E40AE7671925FDF30062F86D /* M80Util.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = M80Util.h; sourceTree = "<group>"; };
 		E472EBCB1925B10000FD15F3 /* libM80Kit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libM80Kit.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		E472EBCE1925B10000FD15F3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		E472EBD21925B10000FD15F3 /* M80Kit-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "M80Kit-Prefix.pch"; sourceTree = "<group>"; };
@@ -124,6 +128,16 @@
 				E40AE7521925EDA10062F86D /* test.txt */,
 			);
 			path = TestResource;
+			sourceTree = "<group>";
+		};
+		E40AE7631925FDBD0062F86D /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				E40AE7671925FDF30062F86D /* M80Util.h */,
+				E40AE7641925FDD00062F86D /* M80TimerHolder.h */,
+				E40AE7651925FDD00062F86D /* M80TimerHolder.m */,
+			);
+			path = Util;
 			sourceTree = "<group>";
 		};
 		E472EBC21925B10000FD15F3 = {
@@ -198,6 +212,7 @@
 		E472EBF61925B16200FD15F3 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				E40AE7631925FDBD0062F86D /* Util */,
 				E472EBF71925B16200FD15F3 /* Categories */,
 			);
 			path = Classes;
@@ -314,6 +329,7 @@
 				E40AE7591925F8CE0062F86D /* NSTimer+M80.m in Sources */,
 				E472EBFE1925B29100FD15F3 /* NSData+M80.m in Sources */,
 				E472EC011925B2AE00FD15F3 /* UIImage+M80.m in Sources */,
+				E40AE7661925FDD00062F86D /* M80TimerHolder.m in Sources */,
 				E472EBD61925B10000FD15F3 /* M80Kit.m in Sources */,
 				E40AE75D1925FB470062F86D /* UIAlertView+M80.m in Sources */,
 				E472EC041925B2CF00FD15F3 /* UIView+M80.m in Sources */,
