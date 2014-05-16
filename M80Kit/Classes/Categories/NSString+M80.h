@@ -1,5 +1,5 @@
 //
-//  M80Kit.h
+//  NSString+M80.h
 //  M80Kit
 //
 //  Created by amao on 5/16/14.
@@ -8,4 +8,6 @@
 
 #import <Foundation/Foundation.h>
 
-#import "M80Categories.h"
+@interface NSString (M80)
+- (NSString *)m80MD5;
+@end

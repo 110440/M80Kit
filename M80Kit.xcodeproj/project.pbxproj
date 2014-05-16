@@ -16,6 +16,16 @@
 		E472EBE31925B10000FD15F3 /* libM80Kit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E472EBCB1925B10000FD15F3 /* libM80Kit.a */; };
 		E472EBE91925B10000FD15F3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E472EBE71925B10000FD15F3 /* InfoPlist.strings */; };
 		E472EBEB1925B10000FD15F3 /* M80KitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E472EBEA1925B10000FD15F3 /* M80KitTests.m */; };
+		E472EBFB1925B18900FD15F3 /* NSString+M80.m in Sources */ = {isa = PBXBuildFile; fileRef = E472EBFA1925B18900FD15F3 /* NSString+M80.m */; };
+		E472EBFE1925B29100FD15F3 /* NSData+M80.m in Sources */ = {isa = PBXBuildFile; fileRef = E472EBFD1925B29100FD15F3 /* NSData+M80.m */; };
+		E472EC011925B2AE00FD15F3 /* UIImage+M80.m in Sources */ = {isa = PBXBuildFile; fileRef = E472EC001925B2AE00FD15F3 /* UIImage+M80.m */; };
+		E472EC041925B2CF00FD15F3 /* UIView+M80.m in Sources */ = {isa = PBXBuildFile; fileRef = E472EC031925B2CF00FD15F3 /* UIView+M80.m */; };
+		E472EC061925B49D00FD15F3 /* NSStringTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E472EC051925B49D00FD15F3 /* NSStringTests.m */; };
+		E472EC071925B72400FD15F3 /* NSString+M80.m in Sources */ = {isa = PBXBuildFile; fileRef = E472EBFA1925B18900FD15F3 /* NSString+M80.m */; };
+		E472EC081925B72700FD15F3 /* NSData+M80.m in Sources */ = {isa = PBXBuildFile; fileRef = E472EBFD1925B29100FD15F3 /* NSData+M80.m */; };
+		E472EC091925B72900FD15F3 /* UIImage+M80.m in Sources */ = {isa = PBXBuildFile; fileRef = E472EC001925B2AE00FD15F3 /* UIImage+M80.m */; };
+		E472EC0A1925B72B00FD15F3 /* UIView+M80.m in Sources */ = {isa = PBXBuildFile; fileRef = E472EC031925B2CF00FD15F3 /* UIView+M80.m */; };
+		E472EC0B1925B72F00FD15F3 /* M80Kit.m in Sources */ = {isa = PBXBuildFile; fileRef = E472EBD51925B10000FD15F3 /* M80Kit.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +63,16 @@
 		E472EBE61925B10000FD15F3 /* M80KitTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "M80KitTests-Info.plist"; sourceTree = "<group>"; };
 		E472EBE81925B10000FD15F3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		E472EBEA1925B10000FD15F3 /* M80KitTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = M80KitTests.m; sourceTree = "<group>"; };
+		E472EBF81925B17300FD15F3 /* M80Categories.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = M80Categories.h; sourceTree = "<group>"; };
+		E472EBF91925B18900FD15F3 /* NSString+M80.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+M80.h"; sourceTree = "<group>"; };
+		E472EBFA1925B18900FD15F3 /* NSString+M80.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+M80.m"; sourceTree = "<group>"; };
+		E472EBFC1925B29100FD15F3 /* NSData+M80.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+M80.h"; sourceTree = "<group>"; };
+		E472EBFD1925B29100FD15F3 /* NSData+M80.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+M80.m"; sourceTree = "<group>"; };
+		E472EBFF1925B2AE00FD15F3 /* UIImage+M80.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+M80.h"; sourceTree = "<group>"; };
+		E472EC001925B2AE00FD15F3 /* UIImage+M80.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+M80.m"; sourceTree = "<group>"; };
+		E472EC021925B2CF00FD15F3 /* UIView+M80.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+M80.h"; sourceTree = "<group>"; };
+		E472EC031925B2CF00FD15F3 /* UIView+M80.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+M80.m"; sourceTree = "<group>"; };
+		E472EC051925B49D00FD15F3 /* NSStringTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSStringTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +130,7 @@
 		E472EBD01925B10000FD15F3 /* M80Kit */ = {
 			isa = PBXGroup;
 			children = (
+				E472EBF61925B16200FD15F3 /* Classes */,
 				E472EBD31925B10000FD15F3 /* M80Kit.h */,
 				E472EBD51925B10000FD15F3 /* M80Kit.m */,
 				E472EBD11925B10000FD15F3 /* Supporting Files */,
@@ -130,6 +151,7 @@
 			children = (
 				E472EBEA1925B10000FD15F3 /* M80KitTests.m */,
 				E472EBE51925B10000FD15F3 /* Supporting Files */,
+				E472EC051925B49D00FD15F3 /* NSStringTests.m */,
 			);
 			path = M80KitTests;
 			sourceTree = "<group>";
@@ -141,6 +163,30 @@
 				E472EBE71925B10000FD15F3 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E472EBF61925B16200FD15F3 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				E472EBF71925B16200FD15F3 /* Categories */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		E472EBF71925B16200FD15F3 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				E472EBF81925B17300FD15F3 /* M80Categories.h */,
+				E472EBF91925B18900FD15F3 /* NSString+M80.h */,
+				E472EBFA1925B18900FD15F3 /* NSString+M80.m */,
+				E472EBFC1925B29100FD15F3 /* NSData+M80.h */,
+				E472EBFD1925B29100FD15F3 /* NSData+M80.m */,
+				E472EBFF1925B2AE00FD15F3 /* UIImage+M80.h */,
+				E472EC001925B2AE00FD15F3 /* UIImage+M80.m */,
+				E472EC021925B2CF00FD15F3 /* UIView+M80.h */,
+				E472EC031925B2CF00FD15F3 /* UIView+M80.m */,
+			);
+			path = Categories;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -224,7 +270,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E472EBFE1925B29100FD15F3 /* NSData+M80.m in Sources */,
+				E472EC011925B2AE00FD15F3 /* UIImage+M80.m in Sources */,
 				E472EBD61925B10000FD15F3 /* M80Kit.m in Sources */,
+				E472EC041925B2CF00FD15F3 /* UIView+M80.m in Sources */,
+				E472EBFB1925B18900FD15F3 /* NSString+M80.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -232,7 +282,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E472EC0A1925B72B00FD15F3 /* UIView+M80.m in Sources */,
+				E472EC0B1925B72F00FD15F3 /* M80Kit.m in Sources */,
 				E472EBEB1925B10000FD15F3 /* M80KitTests.m in Sources */,
+				E472EC061925B49D00FD15F3 /* NSStringTests.m in Sources */,
+				E472EC081925B72700FD15F3 /* NSData+M80.m in Sources */,
+				E472EC071925B72400FD15F3 /* NSString+M80.m in Sources */,
+				E472EC091925B72900FD15F3 /* UIImage+M80.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
