@@ -14,6 +14,7 @@
 #import "UIImage+M80.h"
 #import "UIView+M80.h"
 #import "NSFileManager+M80.h"
+#import "NSTimer+M80.h"
 
 
 #endif

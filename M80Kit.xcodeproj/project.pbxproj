@@ -11,6 +11,12 @@
 		E40AE7501925EC600062F86D /* FileManagerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E40AE74F1925EC600062F86D /* FileManagerTests.m */; };
 		E40AE7531925EDA10062F86D /* test.txt in Resources */ = {isa = PBXBuildFile; fileRef = E40AE7521925EDA10062F86D /* test.txt */; };
 		E40AE7541925EE450062F86D /* NSFileManager+M80.m in Sources */ = {isa = PBXBuildFile; fileRef = E40AE74B1925E2F80062F86D /* NSFileManager+M80.m */; };
+		E40AE7591925F8CE0062F86D /* NSTimer+M80.m in Sources */ = {isa = PBXBuildFile; fileRef = E40AE7581925F8CE0062F86D /* NSTimer+M80.m */; };
+		E40AE75A1925F8CE0062F86D /* NSTimer+M80.m in Sources */ = {isa = PBXBuildFile; fileRef = E40AE7581925F8CE0062F86D /* NSTimer+M80.m */; };
+		E40AE75D1925FB470062F86D /* UIAlertView+M80.m in Sources */ = {isa = PBXBuildFile; fileRef = E40AE75C1925FB470062F86D /* UIAlertView+M80.m */; };
+		E40AE75E1925FB470062F86D /* UIAlertView+M80.m in Sources */ = {isa = PBXBuildFile; fileRef = E40AE75C1925FB470062F86D /* UIAlertView+M80.m */; };
+		E40AE7611925FB570062F86D /* UIActionSheet+M80.m in Sources */ = {isa = PBXBuildFile; fileRef = E40AE7601925FB570062F86D /* UIActionSheet+M80.m */; };
+		E40AE7621925FB570062F86D /* UIActionSheet+M80.m in Sources */ = {isa = PBXBuildFile; fileRef = E40AE7601925FB570062F86D /* UIActionSheet+M80.m */; };
 		E472EBCF1925B10000FD15F3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E472EBCE1925B10000FD15F3 /* Foundation.framework */; };
 		E472EBD41925B10000FD15F3 /* M80Kit.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = E472EBD31925B10000FD15F3 /* M80Kit.h */; };
 		E472EBD61925B10000FD15F3 /* M80Kit.m in Sources */ = {isa = PBXBuildFile; fileRef = E472EBD51925B10000FD15F3 /* M80Kit.m */; };
@@ -60,6 +66,12 @@
 		E40AE74B1925E2F80062F86D /* NSFileManager+M80.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSFileManager+M80.m"; sourceTree = "<group>"; };
 		E40AE74F1925EC600062F86D /* FileManagerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FileManagerTests.m; sourceTree = "<group>"; };
 		E40AE7521925EDA10062F86D /* test.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = test.txt; sourceTree = "<group>"; };
+		E40AE7571925F8CE0062F86D /* NSTimer+M80.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSTimer+M80.h"; sourceTree = "<group>"; };
+		E40AE7581925F8CE0062F86D /* NSTimer+M80.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSTimer+M80.m"; sourceTree = "<group>"; };
+		E40AE75B1925FB470062F86D /* UIAlertView+M80.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIAlertView+M80.h"; sourceTree = "<group>"; };
+		E40AE75C1925FB470062F86D /* UIAlertView+M80.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIAlertView+M80.m"; sourceTree = "<group>"; };
+		E40AE75F1925FB570062F86D /* UIActionSheet+M80.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIActionSheet+M80.h"; sourceTree = "<group>"; };
+		E40AE7601925FB570062F86D /* UIActionSheet+M80.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIActionSheet+M80.m"; sourceTree = "<group>"; };
 		E472EBCB1925B10000FD15F3 /* libM80Kit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libM80Kit.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		E472EBCE1925B10000FD15F3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		E472EBD21925B10000FD15F3 /* M80Kit-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "M80Kit-Prefix.pch"; sourceTree = "<group>"; };
@@ -205,6 +217,12 @@
 				E472EC031925B2CF00FD15F3 /* UIView+M80.m */,
 				E40AE74A1925E2F80062F86D /* NSFileManager+M80.h */,
 				E40AE74B1925E2F80062F86D /* NSFileManager+M80.m */,
+				E40AE7571925F8CE0062F86D /* NSTimer+M80.h */,
+				E40AE7581925F8CE0062F86D /* NSTimer+M80.m */,
+				E40AE75B1925FB470062F86D /* UIAlertView+M80.h */,
+				E40AE75C1925FB470062F86D /* UIAlertView+M80.m */,
+				E40AE75F1925FB570062F86D /* UIActionSheet+M80.h */,
+				E40AE7601925FB570062F86D /* UIActionSheet+M80.m */,
 			);
 			path = Categories;
 			sourceTree = "<group>";
@@ -292,9 +310,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				E40AE74C1925E2F80062F86D /* NSFileManager+M80.m in Sources */,
+				E40AE7611925FB570062F86D /* UIActionSheet+M80.m in Sources */,
+				E40AE7591925F8CE0062F86D /* NSTimer+M80.m in Sources */,
 				E472EBFE1925B29100FD15F3 /* NSData+M80.m in Sources */,
 				E472EC011925B2AE00FD15F3 /* UIImage+M80.m in Sources */,
 				E472EBD61925B10000FD15F3 /* M80Kit.m in Sources */,
+				E40AE75D1925FB470062F86D /* UIAlertView+M80.m in Sources */,
 				E472EC041925B2CF00FD15F3 /* UIView+M80.m in Sources */,
 				E472EBFB1925B18900FD15F3 /* NSString+M80.m in Sources */,
 			);
@@ -308,11 +329,14 @@
 				E472EC0B1925B72F00FD15F3 /* M80Kit.m in Sources */,
 				E472EBEB1925B10000FD15F3 /* M80KitTests.m in Sources */,
 				E40AE7501925EC600062F86D /* FileManagerTests.m in Sources */,
+				E40AE75A1925F8CE0062F86D /* NSTimer+M80.m in Sources */,
 				E472EC061925B49D00FD15F3 /* NSStringTests.m in Sources */,
 				E472EC081925B72700FD15F3 /* NSData+M80.m in Sources */,
+				E40AE7621925FB570062F86D /* UIActionSheet+M80.m in Sources */,
 				E40AE7541925EE450062F86D /* NSFileManager+M80.m in Sources */,
 				E472EC071925B72400FD15F3 /* NSString+M80.m in Sources */,
 				E472EC091925B72900FD15F3 /* UIImage+M80.m in Sources */,
+				E40AE75E1925FB470062F86D /* UIAlertView+M80.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
