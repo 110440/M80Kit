@@ -9,5 +9,5 @@
 #import <Foundation/Foundation.h>
 
 @interface NSData (M80)
-
+- (NSString *)m80BinaryToHex;
 @end

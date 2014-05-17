@@ -37,6 +37,7 @@
 		E472EC091925B72900FD15F3 /* UIImage+M80.m in Sources */ = {isa = PBXBuildFile; fileRef = E472EC001925B2AE00FD15F3 /* UIImage+M80.m */; };
 		E472EC0A1925B72B00FD15F3 /* UIView+M80.m in Sources */ = {isa = PBXBuildFile; fileRef = E472EC031925B2CF00FD15F3 /* UIView+M80.m */; };
 		E472EC0B1925B72F00FD15F3 /* M80Kit.m in Sources */ = {isa = PBXBuildFile; fileRef = E472EBD51925B10000FD15F3 /* M80Kit.m */; };
+		E4AED4A2192719A4004467D0 /* NSDataTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E4AED4A1192719A4004467D0 /* NSDataTests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -97,6 +98,7 @@
 		E472EC021925B2CF00FD15F3 /* UIView+M80.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+M80.h"; sourceTree = "<group>"; };
 		E472EC031925B2CF00FD15F3 /* UIView+M80.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+M80.m"; sourceTree = "<group>"; };
 		E472EC051925B49D00FD15F3 /* NSStringTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSStringTests.m; sourceTree = "<group>"; };
+		E4AED4A1192719A4004467D0 /* NSDataTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSDataTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -191,6 +193,7 @@
 		E472EBE41925B10000FD15F3 /* M80KitTests */ = {
 			isa = PBXGroup;
 			children = (
+				E4AED4A1192719A4004467D0 /* NSDataTests.m */,
 				E472EBEA1925B10000FD15F3 /* M80KitTests.m */,
 				E472EC051925B49D00FD15F3 /* NSStringTests.m */,
 				E40AE74F1925EC600062F86D /* FileManagerTests.m */,
@@ -351,6 +354,7 @@
 				E40AE7621925FB570062F86D /* UIActionSheet+M80.m in Sources */,
 				E40AE7541925EE450062F86D /* NSFileManager+M80.m in Sources */,
 				E472EC071925B72400FD15F3 /* NSString+M80.m in Sources */,
+				E4AED4A2192719A4004467D0 /* NSDataTests.m in Sources */,
 				E472EC091925B72900FD15F3 /* UIImage+M80.m in Sources */,
 				E40AE75E1925FB470062F86D /* UIAlertView+M80.m in Sources */,
 			);

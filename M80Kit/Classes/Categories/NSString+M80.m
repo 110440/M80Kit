@@ -35,6 +35,30 @@
                                                                                  kCFStringEncodingUTF8);
 }
 
+- (NSData *)m80HexToBinary
+{
+#ifdef DEBUG
+    NSCharacterSet *set = [[NSCharacterSet characterSetWithCharactersInString:@"0123456789abcdefABCDEF"] invertedSet];
+    if ([self rangeOfCharacterFromSet:set].location != NSNotFound) {
+        return nil;
+    }
+#endif
+    
+    NSMutableData *data = [NSMutableData data];
+    const char *src = [self UTF8String];
+    unsigned long length = strlen(src);
+    char byteChars[3] = {0};
+    
+    for (unsigned long i = 0; i + 1 < length; i +=2)
+    {
+        byteChars[0] = src[i];
+        byteChars[1] = src[i+1];
+        unsigned long wholeBytes = strtoul(byteChars, NULL, 16);
+        [data appendBytes:&wholeBytes length:1];
+    }
+    return data;
+}
+
 - (NSUInteger)m80GBKBytesLength
 {
     NSStringEncoding enc = CFStringConvertEncodingToNSStringEncoding(kCFStringEncodingGB_18030_2000);

@@ -15,5 +15,7 @@
 
 - (NSString *)m80StringByURLEncoding;
 
+- (NSData *)m80HexToBinary;
+
 - (NSUInteger)m80GBKBytesLength;
 @end

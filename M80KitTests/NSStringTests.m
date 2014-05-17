@@ -55,4 +55,12 @@
     XCTAssertEqualObjects([@"http://weibo.com/epmao/home?wvr=5" m80StringByURLEncoding], @"http%3A%2F%2Fweibo.com%2Fepmao%2Fhome%3Fwvr%3D5", @"");
 }
 
+- (void)testHexToBinary
+{
+    unsigned char bytes[] = {0x11,0x12,0x3f,0x24,0x25};
+    XCTAssertEqualObjects([NSData dataWithBytes:(const void *)bytes length:sizeof(bytes)], [@"11123f2425" m80HexToBinary], @"");
+    
+    XCTAssertEqualObjects([@"1x1" m80HexToBinary],nil, @"");
+}
+
 @end
