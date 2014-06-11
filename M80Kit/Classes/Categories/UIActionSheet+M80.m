@@ -20,8 +20,7 @@ static char kUIActionSheetBlockAddress;
     [self showInView:view];
 }
 
-
-- (void)actionSheet:(UIActionSheet *)actionSheet clickedButtonAtIndex:(NSInteger)buttonIndex
+- (void)actionSheet:(UIActionSheet *)actionSheet didDismissWithButtonIndex:(NSInteger)buttonIndex
 {
     M80UIActionSheetBlock block = objc_getAssociatedObject(self, &kUIActionSheetBlockAddress);
     if (block)

@@ -10,5 +10,7 @@
 #define M80Kit_M80Util_h
 
 #import "M80TimerHolder.h"
+#import "M80MulticastDelegate.h"
+#import "M80Observer.h"
 
 #endif

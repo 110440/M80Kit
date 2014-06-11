@@ -18,6 +18,7 @@
 		E40AE7611925FB570062F86D /* UIActionSheet+M80.m in Sources */ = {isa = PBXBuildFile; fileRef = E40AE7601925FB570062F86D /* UIActionSheet+M80.m */; };
 		E40AE7621925FB570062F86D /* UIActionSheet+M80.m in Sources */ = {isa = PBXBuildFile; fileRef = E40AE7601925FB570062F86D /* UIActionSheet+M80.m */; };
 		E40AE7661925FDD00062F86D /* M80TimerHolder.m in Sources */ = {isa = PBXBuildFile; fileRef = E40AE7651925FDD00062F86D /* M80TimerHolder.m */; };
+		E444950F193334DE00E62F56 /* M80Observer.m in Sources */ = {isa = PBXBuildFile; fileRef = E444950E193334DE00E62F56 /* M80Observer.m */; };
 		E472EBCF1925B10000FD15F3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E472EBCE1925B10000FD15F3 /* Foundation.framework */; };
 		E472EBD41925B10000FD15F3 /* M80Kit.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = E472EBD31925B10000FD15F3 /* M80Kit.h */; };
 		E472EBD61925B10000FD15F3 /* M80Kit.m in Sources */ = {isa = PBXBuildFile; fileRef = E472EBD51925B10000FD15F3 /* M80Kit.m */; };
@@ -37,6 +38,8 @@
 		E472EC091925B72900FD15F3 /* UIImage+M80.m in Sources */ = {isa = PBXBuildFile; fileRef = E472EC001925B2AE00FD15F3 /* UIImage+M80.m */; };
 		E472EC0A1925B72B00FD15F3 /* UIView+M80.m in Sources */ = {isa = PBXBuildFile; fileRef = E472EC031925B2CF00FD15F3 /* UIView+M80.m */; };
 		E472EC0B1925B72F00FD15F3 /* M80Kit.m in Sources */ = {isa = PBXBuildFile; fileRef = E472EBD51925B10000FD15F3 /* M80Kit.m */; };
+		E486E11B19483A6D00AE3455 /* M80Timer.m in Sources */ = {isa = PBXBuildFile; fileRef = E486E11A19483A6D00AE3455 /* M80Timer.m */; };
+		E486E11C19483A6D00AE3455 /* M80Timer.m in Sources */ = {isa = PBXBuildFile; fileRef = E486E11A19483A6D00AE3455 /* M80Timer.m */; };
 		E4AED4A2192719A4004467D0 /* NSDataTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E4AED4A1192719A4004467D0 /* NSDataTests.m */; };
 		E4AFE1CE192AEC1F00D5BCB7 /* M80MulticastDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E4AFE1CD192AEC1F00D5BCB7 /* M80MulticastDelegate.m */; };
 		E4AFE1CF192AEC2A00D5BCB7 /* M80MulticastDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E4AFE1CD192AEC1F00D5BCB7 /* M80MulticastDelegate.m */; };
@@ -80,6 +83,8 @@
 		E40AE7641925FDD00062F86D /* M80TimerHolder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = M80TimerHolder.h; sourceTree = "<group>"; };
 		E40AE7651925FDD00062F86D /* M80TimerHolder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = M80TimerHolder.m; sourceTree = "<group>"; };
 		E40AE7671925FDF30062F86D /* M80Util.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = M80Util.h; sourceTree = "<group>"; };
+		E444950D193334DE00E62F56 /* M80Observer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = M80Observer.h; sourceTree = "<group>"; };
+		E444950E193334DE00E62F56 /* M80Observer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = M80Observer.m; sourceTree = "<group>"; };
 		E472EBCB1925B10000FD15F3 /* libM80Kit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libM80Kit.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		E472EBCE1925B10000FD15F3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		E472EBD21925B10000FD15F3 /* M80Kit-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "M80Kit-Prefix.pch"; sourceTree = "<group>"; };
@@ -101,6 +106,8 @@
 		E472EC021925B2CF00FD15F3 /* UIView+M80.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+M80.h"; sourceTree = "<group>"; };
 		E472EC031925B2CF00FD15F3 /* UIView+M80.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+M80.m"; sourceTree = "<group>"; };
 		E472EC051925B49D00FD15F3 /* NSStringTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSStringTests.m; sourceTree = "<group>"; };
+		E486E11919483A6D00AE3455 /* M80Timer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = M80Timer.h; sourceTree = "<group>"; };
+		E486E11A19483A6D00AE3455 /* M80Timer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = M80Timer.m; sourceTree = "<group>"; };
 		E4AED4A1192719A4004467D0 /* NSDataTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSDataTests.m; sourceTree = "<group>"; };
 		E4AFE1CC192AEC1F00D5BCB7 /* M80MulticastDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = M80MulticastDelegate.h; sourceTree = "<group>"; };
 		E4AFE1CD192AEC1F00D5BCB7 /* M80MulticastDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = M80MulticastDelegate.m; sourceTree = "<group>"; };
@@ -145,6 +152,10 @@
 				E40AE7651925FDD00062F86D /* M80TimerHolder.m */,
 				E4AFE1CC192AEC1F00D5BCB7 /* M80MulticastDelegate.h */,
 				E4AFE1CD192AEC1F00D5BCB7 /* M80MulticastDelegate.m */,
+				E444950D193334DE00E62F56 /* M80Observer.h */,
+				E444950E193334DE00E62F56 /* M80Observer.m */,
+				E486E11919483A6D00AE3455 /* M80Timer.h */,
+				E486E11A19483A6D00AE3455 /* M80Timer.m */,
 			);
 			path = Util;
 			sourceTree = "<group>";
@@ -335,9 +346,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				E40AE74C1925E2F80062F86D /* NSFileManager+M80.m in Sources */,
+				E444950F193334DE00E62F56 /* M80Observer.m in Sources */,
 				E40AE7611925FB570062F86D /* UIActionSheet+M80.m in Sources */,
 				E40AE7591925F8CE0062F86D /* NSTimer+M80.m in Sources */,
 				E472EBFE1925B29100FD15F3 /* NSData+M80.m in Sources */,
+				E486E11B19483A6D00AE3455 /* M80Timer.m in Sources */,
 				E472EC011925B2AE00FD15F3 /* UIImage+M80.m in Sources */,
 				E40AE7661925FDD00062F86D /* M80TimerHolder.m in Sources */,
 				E472EBD61925B10000FD15F3 /* M80Kit.m in Sources */,
@@ -363,6 +376,7 @@
 				E40AE7621925FB570062F86D /* UIActionSheet+M80.m in Sources */,
 				E40AE7541925EE450062F86D /* NSFileManager+M80.m in Sources */,
 				E4AFE1D0192AEC2D00D5BCB7 /* M80TimerHolder.m in Sources */,
+				E486E11C19483A6D00AE3455 /* M80Timer.m in Sources */,
 				E472EC071925B72400FD15F3 /* NSString+M80.m in Sources */,
 				E4AED4A2192719A4004467D0 /* NSDataTests.m in Sources */,
 				E472EC091925B72900FD15F3 /* UIImage+M80.m in Sources */,

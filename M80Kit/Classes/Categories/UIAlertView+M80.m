@@ -19,20 +19,15 @@ static char kUIAlertViewBlockAddress;
     [self show];
 }
 
-- (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex
+
+- (void)alertView:(UIAlertView *)alertView didDismissWithButtonIndex:(NSInteger)buttonIndex
 {
     M80UIAlertViewBlock block = objc_getAssociatedObject(self, &kUIAlertViewBlockAddress);
     if (block)
     {
         block(buttonIndex);
-        objc_setAssociatedObject(self, &kUIAlertViewBlockAddress, nil, OBJC_ASSOCIATION_COPY);
+        objc_setAssociatedObject(self,&kUIAlertViewBlockAddress,nil,OBJC_ASSOCIATION_COPY);
     }
-    
-}
-
-- (void)alertView:(UIAlertView *)alertView didDismissWithButtonIndex:(NSInteger)buttonIndex
-{
-    objc_setAssociatedObject(self,&kUIAlertViewBlockAddress,nil,OBJC_ASSOCIATION_COPY);
 }
 
 @end
