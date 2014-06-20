@@ -12,5 +12,8 @@
 #import "M80TimerHolder.h"
 #import "M80MulticastDelegate.h"
 #import "M80Observer.h"
+#import "M80Timer.h"
+#import "M80WeakProxy.h"
+
 
 #endif
