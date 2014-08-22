@@ -60,7 +60,6 @@
     unsigned char bytes[] = {0x11,0x12,0x3f,0x24,0x25};
     XCTAssertEqualObjects([NSData dataWithBytes:(const void *)bytes length:sizeof(bytes)], [@"11123f2425" m80HexToBinary], @"");
     
-    XCTAssertEqualObjects([@"1x1" m80HexToBinary],nil, @"");
 }
 
 @end

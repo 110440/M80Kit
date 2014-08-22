@@ -15,4 +15,6 @@
 
 - (NSString *)m80MimeTypeForFileExtension:(NSString *)extension;
 
+- (NSString *)m80MD5:(NSString *)filepath;
+
 @end

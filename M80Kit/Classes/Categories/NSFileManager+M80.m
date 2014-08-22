@@ -8,7 +8,7 @@
 
 #import "NSFileManager+M80.h"
 #import <MobileCoreServices/MobileCoreServices.h>
-
+#import "NSData+M80.h"
 
 
 @implementation NSFileManager (M80)
@@ -59,6 +59,18 @@
         mimeType = @"application/octet-stream";
     }
     return mimeType;
+}
+
+- (NSString *)m80MD5:(NSString *)filepath
+{
+    NSString *md5 = nil;
+    if ([filepath length]  &&
+        [[NSFileManager defaultManager] fileExistsAtPath:filepath])
+    {
+        NSData *data = [NSData dataWithContentsOfFile:filepath];
+        md5 = [data m80MD5];
+    }
+    return md5;
 }
 
 @end

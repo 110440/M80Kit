@@ -42,4 +42,13 @@
 {
     
 }
+
+- (void)testFileMD5
+{
+    NSBundle *bundle = [NSBundle bundleForClass:[self class]];
+    NSString *existsFilepath = [bundle pathForResource:@"avatar"
+                                                ofType:@"png"];
+    
+    XCTAssertEqualObjects([[NSFileManager defaultManager] m80MD5:existsFilepath], @"cf3291fbe3d151e582e0727c5fc966cc", @"");
+}
 @end

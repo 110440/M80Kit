@@ -10,4 +10,6 @@
 
 @interface NSData (M80)
 - (NSString *)m80BinaryToHex;
+
+- (NSString *)m80MD5;
 @end
