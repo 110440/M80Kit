@@ -22,8 +22,6 @@
         id item = [attributes objectForKey:NSFileSize];
         fileSize = [item isKindOfClass:[NSNumber class]] ? [item unsignedLongLongValue] : 0;
     }
-    
-    
     return fileSize;
 }
 
