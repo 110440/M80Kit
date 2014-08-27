@@ -39,7 +39,7 @@
         CFStringRef UTI = UTTypeCreatePreferredIdentifierForTag(kUTTagClassFilenameExtension, (__bridge CFStringRef)extension, NULL);
         CFStringRef mimeTypeRef = UTTypeCopyPreferredTagWithClass (UTI, kUTTagClassMIMEType);
         CFRelease(UTI);
-        if (mimeTypeRef)
+        if (!mimeTypeRef)
         {
             //某些机器无法解析某些后缀,加特别判断
             if ([extension isEqualToString:@"aac"])
