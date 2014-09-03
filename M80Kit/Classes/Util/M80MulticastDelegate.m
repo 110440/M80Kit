@@ -46,6 +46,7 @@
 #pragma mark - Delegate增/删
 - (void)addDelegate:(id)delegate
 {
+    [self removeDelegate:delegate];
     M80DelegateNode *node = [M80DelegateNode node:delegate];
     [_delegateNodes addObject:node];
 }
