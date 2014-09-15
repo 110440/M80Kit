@@ -15,6 +15,8 @@
 #import "UIView+M80.h"
 #import "NSFileManager+M80.h"
 #import "NSTimer+M80.h"
+#import "UIAlertView+M80.h"
+#import "UIActionSheet+M80.h"
 
 
 #endif

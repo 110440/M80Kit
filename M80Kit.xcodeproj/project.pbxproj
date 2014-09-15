@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8656473F19C728E5006B3581 /* NSURL+M80.m in Sources */ = {isa = PBXBuildFile; fileRef = 8656473E19C728E5006B3581 /* NSURL+M80.m */; };
 		E40AE74C1925E2F80062F86D /* NSFileManager+M80.m in Sources */ = {isa = PBXBuildFile; fileRef = E40AE74B1925E2F80062F86D /* NSFileManager+M80.m */; };
 		E40AE7501925EC600062F86D /* FileManagerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E40AE74F1925EC600062F86D /* FileManagerTests.m */; };
 		E40AE7531925EDA10062F86D /* test.txt in Resources */ = {isa = PBXBuildFile; fileRef = E40AE7521925EDA10062F86D /* test.txt */; };
@@ -72,6 +73,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		8656473D19C728E5006B3581 /* NSURL+M80.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSURL+M80.h"; sourceTree = "<group>"; };
+		8656473E19C728E5006B3581 /* NSURL+M80.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSURL+M80.m"; sourceTree = "<group>"; };
+		8656474019C72BBD006B3581 /* M80Macro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = M80Macro.h; sourceTree = "<group>"; };
 		E40AE74A1925E2F80062F86D /* NSFileManager+M80.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSFileManager+M80.h"; sourceTree = "<group>"; };
 		E40AE74B1925E2F80062F86D /* NSFileManager+M80.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSFileManager+M80.m"; sourceTree = "<group>"; };
 		E40AE74F1925EC600062F86D /* FileManagerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FileManagerTests.m; sourceTree = "<group>"; };
@@ -243,6 +247,7 @@
 			children = (
 				E40AE7631925FDBD0062F86D /* Util */,
 				E472EBF71925B16200FD15F3 /* Categories */,
+				8656474019C72BBD006B3581 /* M80Macro.h */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -267,6 +272,8 @@
 				E40AE75C1925FB470062F86D /* UIAlertView+M80.m */,
 				E40AE75F1925FB570062F86D /* UIActionSheet+M80.h */,
 				E40AE7601925FB570062F86D /* UIActionSheet+M80.m */,
+				8656473D19C728E5006B3581 /* NSURL+M80.h */,
+				8656473E19C728E5006B3581 /* NSURL+M80.m */,
 			);
 			path = Categories;
 			sourceTree = "<group>";
@@ -354,6 +361,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8656473F19C728E5006B3581 /* NSURL+M80.m in Sources */,
 				E40AE74C1925E2F80062F86D /* NSFileManager+M80.m in Sources */,
 				E444950F193334DE00E62F56 /* M80Observer.m in Sources */,
 				E40AE7611925FB570062F86D /* UIActionSheet+M80.m in Sources */,
