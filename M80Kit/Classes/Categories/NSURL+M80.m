@@ -7,7 +7,6 @@
 //
 
 #import "NSURL+M80.h"
-#import "NSString+M80.h"
 
 @implementation NSURL (M80)
 - (NSDictionary *)m80QueryComponents
@@ -22,8 +21,8 @@
             NSArray *keyAndValues = [component componentsSeparatedByString:@"?"];
             if ([keyAndValues count] == 2)
             {
-                NSString *key = [[keyAndValues firstObject] m80StringByURLEncoding];
-                NSString *value = [[keyAndValues lastObject] m80StringByURLEncoding];
+                NSString *key = [keyAndValues firstObject];
+                NSString *value = [keyAndValues lastObject];
                 if ([key length] && [value length])
                 {
                     [dict setObject:value
