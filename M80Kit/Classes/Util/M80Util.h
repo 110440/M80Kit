@@ -14,6 +14,7 @@
 #import "M80Observer.h"
 #import "M80Timer.h"
 #import "M80WeakProxy.h"
+#import "M80XMLSerialization.h"
 
 
 #endif
