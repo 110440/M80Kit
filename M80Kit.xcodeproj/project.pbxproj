@@ -183,6 +183,13 @@
 			path = Util;
 			sourceTree = "<group>";
 		};
+		E438435A1A42A98F00875C87 /* UIComponents */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UIComponents;
+			sourceTree = "<group>";
+		};
 		E472EBC21925B10000FD15F3 = {
 			isa = PBXGroup;
 			children = (
@@ -257,6 +264,7 @@
 		E472EBF61925B16200FD15F3 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				E438435A1A42A98F00875C87 /* UIComponents */,
 				E40AE7631925FDBD0062F86D /* Util */,
 				E472EBF71925B16200FD15F3 /* Categories */,
 				8656474019C72BBD006B3581 /* M80Macro.h */,
