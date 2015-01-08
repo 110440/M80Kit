@@ -23,6 +23,8 @@
 		E40DBE1319D01522002AEED0 /* M80XMLSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = E4F6A30B19CFE55100B97C5C /* M80XMLSerialization.m */; };
 		E40DBE1719D01587002AEED0 /* M80XMLSerializationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E40DBE1619D01587002AEED0 /* M80XMLSerializationTests.m */; };
 		E42B7DBD1954211900216A30 /* M80WeakProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = E42B7DBC1954211900216A30 /* M80WeakProxy.m */; };
+		E43448731A5E369F005D38D2 /* M80HttpOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = E43448721A5E369F005D38D2 /* M80HttpOperation.m */; };
+		E43448761A5E36AB005D38D2 /* M80HttpManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E43448751A5E36AB005D38D2 /* M80HttpManager.m */; };
 		E444950F193334DE00E62F56 /* M80Observer.m in Sources */ = {isa = PBXBuildFile; fileRef = E444950E193334DE00E62F56 /* M80Observer.m */; };
 		E472EBCF1925B10000FD15F3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E472EBCE1925B10000FD15F3 /* Foundation.framework */; };
 		E472EBD41925B10000FD15F3 /* M80Kit.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = E472EBD31925B10000FD15F3 /* M80Kit.h */; };
@@ -97,6 +99,11 @@
 		E40DBE1619D01587002AEED0 /* M80XMLSerializationTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = M80XMLSerializationTests.m; sourceTree = "<group>"; };
 		E42B7DBB1954211900216A30 /* M80WeakProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = M80WeakProxy.h; sourceTree = "<group>"; };
 		E42B7DBC1954211900216A30 /* M80WeakProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = M80WeakProxy.m; sourceTree = "<group>"; };
+		E43448711A5E369F005D38D2 /* M80HttpOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = M80HttpOperation.h; sourceTree = "<group>"; };
+		E43448721A5E369F005D38D2 /* M80HttpOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = M80HttpOperation.m; sourceTree = "<group>"; };
+		E43448741A5E36AB005D38D2 /* M80HttpManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = M80HttpManager.h; sourceTree = "<group>"; };
+		E43448751A5E36AB005D38D2 /* M80HttpManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = M80HttpManager.m; sourceTree = "<group>"; };
+		E43448771A5E36BC005D38D2 /* M80Network.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = M80Network.h; sourceTree = "<group>"; };
 		E444950D193334DE00E62F56 /* M80Observer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = M80Observer.h; sourceTree = "<group>"; };
 		E444950E193334DE00E62F56 /* M80Observer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = M80Observer.m; sourceTree = "<group>"; };
 		E472EBCB1925B10000FD15F3 /* libM80Kit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libM80Kit.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -183,11 +190,16 @@
 			path = Util;
 			sourceTree = "<group>";
 		};
-		E438435A1A42A98F00875C87 /* UIComponents */ = {
+		E43448701A5E368F005D38D2 /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				E43448711A5E369F005D38D2 /* M80HttpOperation.h */,
+				E43448721A5E369F005D38D2 /* M80HttpOperation.m */,
+				E43448741A5E36AB005D38D2 /* M80HttpManager.h */,
+				E43448751A5E36AB005D38D2 /* M80HttpManager.m */,
+				E43448771A5E36BC005D38D2 /* M80Network.h */,
 			);
-			path = UIComponents;
+			path = Network;
 			sourceTree = "<group>";
 		};
 		E472EBC21925B10000FD15F3 = {
@@ -264,7 +276,7 @@
 		E472EBF61925B16200FD15F3 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				E438435A1A42A98F00875C87 /* UIComponents */,
+				E43448701A5E368F005D38D2 /* Network */,
 				E40AE7631925FDBD0062F86D /* Util */,
 				E472EBF71925B16200FD15F3 /* Categories */,
 				8656474019C72BBD006B3581 /* M80Macro.h */,
@@ -387,6 +399,7 @@
 				E40AE74C1925E2F80062F86D /* NSFileManager+M80.m in Sources */,
 				E444950F193334DE00E62F56 /* M80Observer.m in Sources */,
 				E40AE7611925FB570062F86D /* UIActionSheet+M80.m in Sources */,
+				E43448731A5E369F005D38D2 /* M80HttpOperation.m in Sources */,
 				E4F6A30C19CFE55100B97C5C /* M80XMLSerialization.m in Sources */,
 				E40AE7591925F8CE0062F86D /* NSTimer+M80.m in Sources */,
 				E42B7DBD1954211900216A30 /* M80WeakProxy.m in Sources */,
@@ -399,6 +412,7 @@
 				E472EC041925B2CF00FD15F3 /* UIView+M80.m in Sources */,
 				E472EBFB1925B18900FD15F3 /* NSString+M80.m in Sources */,
 				E4AFE1CE192AEC1F00D5BCB7 /* M80MulticastDelegate.m in Sources */,
+				E43448761A5E36AB005D38D2 /* M80HttpManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
