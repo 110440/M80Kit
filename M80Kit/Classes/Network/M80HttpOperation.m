@@ -41,7 +41,6 @@
 @end
 
 @interface M80HttpOperation ()<NSURLConnectionDelegate,NSURLConnectionDataDelegate>
-@property (nonatomic,strong)    NSLock  *lock;
 @property (nonatomic,strong)    NSMutableData   *data;
 @property (nonatomic,strong)    NSURLConnection *connection;
 @end
@@ -52,60 +51,68 @@
 {
     if (self = [super init])
     {
-        _lock = [[NSLock alloc] init];
     }
     return self;
 }
 
 - (void)main
 {
-    if (self.isCancelled)
+    @synchronized(self)
     {
-        return;
+        if (self.isCancelled)
+        {
+            return;
+        }
+        
+        if (_request == nil ||
+            ![NSURLConnection canHandleRequest:_request])
+        {
+            dispatch_async(dispatch_get_main_queue(), ^{
+                if (self.failure)
+                {
+                    NSError *error = [NSError errorWithDomain:@"M80HttpDomain"
+                                                         code:M80HttpCodeInvalidRequest
+                                                     userInfo:nil];
+                    self.failure(self,error);
+                }
+            });
+            return;
+        }
+        
+        
+        [self performSelector:@selector(reqeust:)
+                     onThread:[M80HttpThread thread]
+                   withObject:nil
+                waitUntilDone:NO];
     }
-    
-    if (_request == nil ||
-        ![NSURLConnection canHandleRequest:_request])
-    {
-        dispatch_async(dispatch_get_main_queue(), ^{
-            if (self.failure)
-            {
-                NSError *error = [NSError errorWithDomain:@"M80HttpDomain"
-                                                     code:M80HttpCodeInvalidRequest
-                                                 userInfo:nil];
-                self.failure(self,error);
-            }
-        });
-        return;
-    }
-    
-    
-    [self performSelector:@selector(doHttpRequest:)
-                 onThread:[M80HttpThread thread]
-               withObject:nil
-            waitUntilDone:NO];
 }
 
 - (void)cancel
 {
-    [self cancelConnection];
+    @synchronized(self)
+    {
+        if (![self isFinished] && ![self isCancelled])
+        {
+            [super cancel];
+            [self cancelConnection];
+        }
+    }
 }
 
 - (void)cancelConnection
 {
-    [self.lock lock];
     [self.connection cancel];
     self.connection = nil;
-    [self.lock unlock];
 }
 
 
-- (void)doHttpRequest:(id)sender
+- (void)reqeust:(id)sender
 {
-    [self.lock lock];
-    self.connection = [NSURLConnection connectionWithRequest:self.request
-                                                    delegate:self];
-    [self.lock unlock];
+    @synchronized(self)
+    {
+        self.connection = [NSURLConnection connectionWithRequest:self.request
+                                                        delegate:self];
+    }
 }
 
 
@@ -135,7 +142,10 @@ didReceiveResponse:(NSURLResponse *)response
         NSError *error = [NSError errorWithDomain:@"M80HttpDomain"
                                              code:M80HttpCodeInvalidResponse
                                          userInfo:nil];
-        [self cancelConnection];
+        @synchronized(self)
+        {
+            [self cancelConnection];
+        }
         dispatch_async(dispatch_get_main_queue(), ^{
             if (self.failure)
             {
