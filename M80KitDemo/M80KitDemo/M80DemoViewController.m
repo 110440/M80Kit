@@ -19,17 +19,6 @@
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];
     
-    for (NSInteger i = 0; i < 100; i++)
-    {
-        NSURL *url = [NSURL URLWithString:@"http://www.sina.com"];
-        NSURLRequest *request = [NSURLRequest requestWithURL:url];
-        [[M80HttpManager sharedManager] request:request
-                                        success:^(M80HttpOperation *operation, NSData *data) {
-                                            NSLog(@"s %@",[operation debugDescription]);
-                                        } failure:^(M80HttpOperation *operation, NSError *error) {
-                                            NSLog(@"f %@",[operation debugDescription]);
-                                        }];
-    }
 }
 
 - (void)didReceiveMemoryWarning {

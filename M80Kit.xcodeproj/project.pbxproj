@@ -51,6 +51,7 @@
 		E4AFE1CE192AEC1F00D5BCB7 /* M80MulticastDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E4AFE1CD192AEC1F00D5BCB7 /* M80MulticastDelegate.m */; };
 		E4AFE1CF192AEC2A00D5BCB7 /* M80MulticastDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E4AFE1CD192AEC1F00D5BCB7 /* M80MulticastDelegate.m */; };
 		E4AFE1D0192AEC2D00D5BCB7 /* M80TimerHolder.m in Sources */ = {isa = PBXBuildFile; fileRef = E40AE7651925FDD00062F86D /* M80TimerHolder.m */; };
+		E4D2939A1A63679B00563AD0 /* UITableView+M80.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D293991A63679B00563AD0 /* UITableView+M80.m */; };
 		E4F6A30C19CFE55100B97C5C /* M80XMLSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = E4F6A30B19CFE55100B97C5C /* M80XMLSerialization.m */; };
 		E4F84FB919A70EA100111E26 /* avatar.png in Resources */ = {isa = PBXBuildFile; fileRef = E4F84FB819A70EA100111E26 /* avatar.png */; };
 /* End PBXBuildFile section */
@@ -132,6 +133,8 @@
 		E4AED4A1192719A4004467D0 /* NSDataTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSDataTests.m; sourceTree = "<group>"; };
 		E4AFE1CC192AEC1F00D5BCB7 /* M80MulticastDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = M80MulticastDelegate.h; sourceTree = "<group>"; };
 		E4AFE1CD192AEC1F00D5BCB7 /* M80MulticastDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = M80MulticastDelegate.m; sourceTree = "<group>"; };
+		E4D293981A63679B00563AD0 /* UITableView+M80.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+M80.h"; sourceTree = "<group>"; };
+		E4D293991A63679B00563AD0 /* UITableView+M80.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+M80.m"; sourceTree = "<group>"; };
 		E4F6A30A19CFE55100B97C5C /* M80XMLSerialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = M80XMLSerialization.h; sourceTree = "<group>"; };
 		E4F6A30B19CFE55100B97C5C /* M80XMLSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = M80XMLSerialization.m; sourceTree = "<group>"; };
 		E4F84FB819A70EA100111E26 /* avatar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = avatar.png; sourceTree = "<group>"; };
@@ -306,6 +309,8 @@
 				E40AE7601925FB570062F86D /* UIActionSheet+M80.m */,
 				8656473D19C728E5006B3581 /* NSURL+M80.h */,
 				8656473E19C728E5006B3581 /* NSURL+M80.m */,
+				E4D293981A63679B00563AD0 /* UITableView+M80.h */,
+				E4D293991A63679B00563AD0 /* UITableView+M80.m */,
 			);
 			path = Categories;
 			sourceTree = "<group>";
@@ -406,6 +411,7 @@
 				E472EBFE1925B29100FD15F3 /* NSData+M80.m in Sources */,
 				E486E11B19483A6D00AE3455 /* M80Timer.m in Sources */,
 				E472EC011925B2AE00FD15F3 /* UIImage+M80.m in Sources */,
+				E4D2939A1A63679B00563AD0 /* UITableView+M80.m in Sources */,
 				E40AE7661925FDD00062F86D /* M80TimerHolder.m in Sources */,
 				E472EBD61925B10000FD15F3 /* M80Kit.m in Sources */,
 				E40AE75D1925FB470062F86D /* UIAlertView+M80.m in Sources */,
