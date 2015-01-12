@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name = 'M80Kit'
-  s.version = '1.0.0'
+  s.version = '1.0.1'
   s.authors = {'Xiang Wangfeng' => 'xiangwangfeng@gmail.com'}
   s.homepage = 'https://github.com/xiangwangfeng/M80Kit/'
   s.summary = 'A collection of iOS classes & categories '
