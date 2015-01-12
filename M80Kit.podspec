@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name = 'M80Kit'
-  s.version = '1.0.2'
+  s.version = '1.0.3'
   s.authors = {'Xiang Wangfeng' => 'xiangwangfeng@gmail.com'}
   s.homepage = 'https://github.com/xiangwangfeng/M80Kit/'
   s.summary = 'A collection of iOS classes & categories '
@@ -9,5 +9,17 @@ Pod::Spec.new do |s|
   s.requires_arc = true
   s.platform = :ios
   s.ios.deployment_target = '5.0'
-  s.source_files = '{M80Kit,M80Kit/Classes,M80Kit/Classes/Categories,M80Kit/Classes/Util,M80Kit/Classes/Network}/*.{h,m}'
+  s.source_files = '{M80Kit}/*.{h,m}'
+
+  s.subspec 'Categories' do |ss|
+    ss.source_files = 'M80Kit/Classes/Categories/*.{h,m}'
+  end
+
+  s.subspec 'Util' do |ss|
+    ss.source_files = 'M80Kit/Classes/Util/*.{h,m}'
+  end
+
+  s.subspec 'Network' do |ss|
+    ss.source_files = 'M80Kit/Classes/Network/*.{h,m}'
+  end
 end

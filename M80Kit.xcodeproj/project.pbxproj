@@ -82,7 +82,6 @@
 /* Begin PBXFileReference section */
 		8656473D19C728E5006B3581 /* NSURL+M80.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSURL+M80.h"; sourceTree = "<group>"; };
 		8656473E19C728E5006B3581 /* NSURL+M80.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSURL+M80.m"; sourceTree = "<group>"; };
-		8656474019C72BBD006B3581 /* M80Macro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = M80Macro.h; sourceTree = "<group>"; };
 		E40AE74A1925E2F80062F86D /* NSFileManager+M80.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSFileManager+M80.h"; sourceTree = "<group>"; };
 		E40AE74B1925E2F80062F86D /* NSFileManager+M80.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSFileManager+M80.m"; sourceTree = "<group>"; };
 		E40AE74F1925EC600062F86D /* FileManagerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FileManagerTests.m; sourceTree = "<group>"; };
@@ -135,6 +134,7 @@
 		E4AFE1CD192AEC1F00D5BCB7 /* M80MulticastDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = M80MulticastDelegate.m; sourceTree = "<group>"; };
 		E4D293981A63679B00563AD0 /* UITableView+M80.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+M80.h"; sourceTree = "<group>"; };
 		E4D293991A63679B00563AD0 /* UITableView+M80.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+M80.m"; sourceTree = "<group>"; };
+		E4D293E01A63B49500563AD0 /* M80Macro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = M80Macro.h; path = M80Kit/M80Macro.h; sourceTree = SOURCE_ROOT; };
 		E4F6A30A19CFE55100B97C5C /* M80XMLSerialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = M80XMLSerialization.h; sourceTree = "<group>"; };
 		E4F6A30B19CFE55100B97C5C /* M80XMLSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = M80XMLSerialization.m; sourceTree = "<group>"; };
 		E4F84FB819A70EA100111E26 /* avatar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = avatar.png; sourceTree = "<group>"; };
@@ -240,6 +240,7 @@
 				E472EBF61925B16200FD15F3 /* Classes */,
 				E472EBD31925B10000FD15F3 /* M80Kit.h */,
 				E472EBD51925B10000FD15F3 /* M80Kit.m */,
+				E4D293E01A63B49500563AD0 /* M80Macro.h */,
 				E472EBD11925B10000FD15F3 /* Supporting Files */,
 			);
 			path = M80Kit;
@@ -282,7 +283,6 @@
 				E43448701A5E368F005D38D2 /* Network */,
 				E40AE7631925FDBD0062F86D /* Util */,
 				E472EBF71925B16200FD15F3 /* Categories */,
-				8656474019C72BBD006B3581 /* M80Macro.h */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
