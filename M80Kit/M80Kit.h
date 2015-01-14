@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "M80Macro.h"
 #import "M80Categories.h"
 #import "M80Util.h"
-#import "M80Macro.h"
+#import "M80Network.h"

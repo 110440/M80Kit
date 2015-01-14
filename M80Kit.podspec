@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name = 'M80Kit'
-  s.version = '1.0.3'
+  s.version = '1.0.4'
   s.authors = {'Xiang Wangfeng' => 'xiangwangfeng@gmail.com'}
   s.homepage = 'https://github.com/xiangwangfeng/M80Kit/'
   s.summary = 'A collection of iOS classes & categories '
@@ -22,4 +22,7 @@ Pod::Spec.new do |s|
   s.subspec 'Network' do |ss|
     ss.source_files = 'M80Kit/Classes/Network/*.{h,m}'
   end
+
+  s.frameworks = 'SystemConfiguration'
+
 end

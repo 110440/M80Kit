@@ -7,7 +7,7 @@
 //
 
 #import "M80DemoViewController.h"
-#import "M80HttpManager.h"
+#import "M80Kit.h"
 
 @interface M80DemoViewController ()
 
@@ -18,7 +18,6 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];
-    
 }
 
 - (void)didReceiveMemoryWarning {

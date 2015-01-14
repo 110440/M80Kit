@@ -47,10 +47,12 @@
 		E472EC0B1925B72F00FD15F3 /* M80Kit.m in Sources */ = {isa = PBXBuildFile; fileRef = E472EBD51925B10000FD15F3 /* M80Kit.m */; };
 		E486E11B19483A6D00AE3455 /* M80Timer.m in Sources */ = {isa = PBXBuildFile; fileRef = E486E11A19483A6D00AE3455 /* M80Timer.m */; };
 		E486E11C19483A6D00AE3455 /* M80Timer.m in Sources */ = {isa = PBXBuildFile; fileRef = E486E11A19483A6D00AE3455 /* M80Timer.m */; };
+		E49C2D401A66378A0028BB8F /* M80NetworkConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = E49C2D3F1A66378A0028BB8F /* M80NetworkConfig.m */; };
 		E4AED4A2192719A4004467D0 /* NSDataTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E4AED4A1192719A4004467D0 /* NSDataTests.m */; };
 		E4AFE1CE192AEC1F00D5BCB7 /* M80MulticastDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E4AFE1CD192AEC1F00D5BCB7 /* M80MulticastDelegate.m */; };
 		E4AFE1CF192AEC2A00D5BCB7 /* M80MulticastDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E4AFE1CD192AEC1F00D5BCB7 /* M80MulticastDelegate.m */; };
 		E4AFE1D0192AEC2D00D5BCB7 /* M80TimerHolder.m in Sources */ = {isa = PBXBuildFile; fileRef = E40AE7651925FDD00062F86D /* M80TimerHolder.m */; };
+		E4CBD41A1A6620A200148F30 /* UIColor+M80.m in Sources */ = {isa = PBXBuildFile; fileRef = E4CBD4191A6620A200148F30 /* UIColor+M80.m */; };
 		E4D2939A1A63679B00563AD0 /* UITableView+M80.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D293991A63679B00563AD0 /* UITableView+M80.m */; };
 		E4F6A30C19CFE55100B97C5C /* M80XMLSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = E4F6A30B19CFE55100B97C5C /* M80XMLSerialization.m */; };
 		E4F84FB919A70EA100111E26 /* avatar.png in Resources */ = {isa = PBXBuildFile; fileRef = E4F84FB819A70EA100111E26 /* avatar.png */; };
@@ -129,9 +131,13 @@
 		E472EC051925B49D00FD15F3 /* NSStringTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSStringTests.m; sourceTree = "<group>"; };
 		E486E11919483A6D00AE3455 /* M80Timer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = M80Timer.h; sourceTree = "<group>"; };
 		E486E11A19483A6D00AE3455 /* M80Timer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = M80Timer.m; sourceTree = "<group>"; };
+		E49C2D3E1A66378A0028BB8F /* M80NetworkConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = M80NetworkConfig.h; sourceTree = "<group>"; };
+		E49C2D3F1A66378A0028BB8F /* M80NetworkConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = M80NetworkConfig.m; sourceTree = "<group>"; };
 		E4AED4A1192719A4004467D0 /* NSDataTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSDataTests.m; sourceTree = "<group>"; };
 		E4AFE1CC192AEC1F00D5BCB7 /* M80MulticastDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = M80MulticastDelegate.h; sourceTree = "<group>"; };
 		E4AFE1CD192AEC1F00D5BCB7 /* M80MulticastDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = M80MulticastDelegate.m; sourceTree = "<group>"; };
+		E4CBD4181A6620A200148F30 /* UIColor+M80.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+M80.h"; sourceTree = "<group>"; };
+		E4CBD4191A6620A200148F30 /* UIColor+M80.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+M80.m"; sourceTree = "<group>"; };
 		E4D293981A63679B00563AD0 /* UITableView+M80.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+M80.h"; sourceTree = "<group>"; };
 		E4D293991A63679B00563AD0 /* UITableView+M80.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+M80.m"; sourceTree = "<group>"; };
 		E4D293E01A63B49500563AD0 /* M80Macro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = M80Macro.h; path = M80Kit/M80Macro.h; sourceTree = SOURCE_ROOT; };
@@ -201,6 +207,8 @@
 				E43448741A5E36AB005D38D2 /* M80HttpManager.h */,
 				E43448751A5E36AB005D38D2 /* M80HttpManager.m */,
 				E43448771A5E36BC005D38D2 /* M80Network.h */,
+				E49C2D3E1A66378A0028BB8F /* M80NetworkConfig.h */,
+				E49C2D3F1A66378A0028BB8F /* M80NetworkConfig.m */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -311,6 +319,8 @@
 				8656473E19C728E5006B3581 /* NSURL+M80.m */,
 				E4D293981A63679B00563AD0 /* UITableView+M80.h */,
 				E4D293991A63679B00563AD0 /* UITableView+M80.m */,
+				E4CBD4181A6620A200148F30 /* UIColor+M80.h */,
+				E4CBD4191A6620A200148F30 /* UIColor+M80.m */,
 			);
 			path = Categories;
 			sourceTree = "<group>";
@@ -404,6 +414,7 @@
 				E40AE74C1925E2F80062F86D /* NSFileManager+M80.m in Sources */,
 				E444950F193334DE00E62F56 /* M80Observer.m in Sources */,
 				E40AE7611925FB570062F86D /* UIActionSheet+M80.m in Sources */,
+				E49C2D401A66378A0028BB8F /* M80NetworkConfig.m in Sources */,
 				E43448731A5E369F005D38D2 /* M80HttpOperation.m in Sources */,
 				E4F6A30C19CFE55100B97C5C /* M80XMLSerialization.m in Sources */,
 				E40AE7591925F8CE0062F86D /* NSTimer+M80.m in Sources */,
@@ -417,6 +428,7 @@
 				E40AE75D1925FB470062F86D /* UIAlertView+M80.m in Sources */,
 				E472EC041925B2CF00FD15F3 /* UIView+M80.m in Sources */,
 				E472EBFB1925B18900FD15F3 /* NSString+M80.m in Sources */,
+				E4CBD41A1A6620A200148F30 /* UIColor+M80.m in Sources */,
 				E4AFE1CE192AEC1F00D5BCB7 /* M80MulticastDelegate.m in Sources */,
 				E43448761A5E36AB005D38D2 /* M80HttpManager.m in Sources */,
 			);

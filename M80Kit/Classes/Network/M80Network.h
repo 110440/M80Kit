@@ -11,5 +11,6 @@
 
 #import "M80HttpOperation.h"
 #import "M80HttpManager.h"
+#import "M80NetworkConfig.h"
 
 #endif
