@@ -143,7 +143,6 @@
 		E4D293E01A63B49500563AD0 /* M80Macro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = M80Macro.h; path = M80Kit/M80Macro.h; sourceTree = SOURCE_ROOT; };
 		E4D3D2FB1AA170EC00BA8FC5 /* UIResponder+M80.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIResponder+M80.h"; sourceTree = "<group>"; };
 		E4D3D2FC1AA170EC00BA8FC5 /* UIResponder+M80.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIResponder+M80.m"; sourceTree = "<group>"; };
-		E4D3D3021AA1894900BA8FC5 /* M80Config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = M80Config.h; path = M80Kit/M80Config.h; sourceTree = SOURCE_ROOT; };
 		E4D3D3031AA190E700BA8FC5 /* M80Functions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = M80Functions.h; sourceTree = "<group>"; };
 		E4D3D3041AA190E700BA8FC5 /* M80Functions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = M80Functions.m; sourceTree = "<group>"; };
 		E4D3D3131AA1A89300BA8FC5 /* M80FolderMonitor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = M80FolderMonitor.h; sourceTree = "<group>"; };
@@ -259,7 +258,6 @@
 				E472EBF61925B16200FD15F3 /* Classes */,
 				E472EBD31925B10000FD15F3 /* M80Kit.h */,
 				E4D293E01A63B49500563AD0 /* M80Macro.h */,
-				E4D3D3021AA1894900BA8FC5 /* M80Config.h */,
 				E472EBD11925B10000FD15F3 /* Supporting Files */,
 			);
 			path = M80Kit;
