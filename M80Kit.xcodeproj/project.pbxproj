@@ -54,6 +54,7 @@
 		E4D2939A1A63679B00563AD0 /* UITableView+M80.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D293991A63679B00563AD0 /* UITableView+M80.m */; };
 		E4D3D2FD1AA170EC00BA8FC5 /* UIResponder+M80.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D3D2FC1AA170EC00BA8FC5 /* UIResponder+M80.m */; };
 		E4D3D3051AA190E700BA8FC5 /* M80Functions.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D3D3041AA190E700BA8FC5 /* M80Functions.m */; };
+		E4D3D3151AA1A89300BA8FC5 /* M80FolderMonitor.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D3D3141AA1A89300BA8FC5 /* M80FolderMonitor.m */; };
 		E4F6A30C19CFE55100B97C5C /* M80XMLSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = E4F6A30B19CFE55100B97C5C /* M80XMLSerialization.m */; };
 		E4F84FB919A70EA100111E26 /* avatar.png in Resources */ = {isa = PBXBuildFile; fileRef = E4F84FB819A70EA100111E26 /* avatar.png */; };
 /* End PBXBuildFile section */
@@ -145,6 +146,8 @@
 		E4D3D3021AA1894900BA8FC5 /* M80Config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = M80Config.h; path = M80Kit/M80Config.h; sourceTree = SOURCE_ROOT; };
 		E4D3D3031AA190E700BA8FC5 /* M80Functions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = M80Functions.h; sourceTree = "<group>"; };
 		E4D3D3041AA190E700BA8FC5 /* M80Functions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = M80Functions.m; sourceTree = "<group>"; };
+		E4D3D3131AA1A89300BA8FC5 /* M80FolderMonitor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = M80FolderMonitor.h; sourceTree = "<group>"; };
+		E4D3D3141AA1A89300BA8FC5 /* M80FolderMonitor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = M80FolderMonitor.m; sourceTree = "<group>"; };
 		E4F6A30A19CFE55100B97C5C /* M80XMLSerialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = M80XMLSerialization.h; sourceTree = "<group>"; };
 		E4F6A30B19CFE55100B97C5C /* M80XMLSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = M80XMLSerialization.m; sourceTree = "<group>"; };
 		E4F84FB819A70EA100111E26 /* avatar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = avatar.png; sourceTree = "<group>"; };
@@ -201,6 +204,8 @@
 				E4F6A30B19CFE55100B97C5C /* M80XMLSerialization.m */,
 				E4D3D3031AA190E700BA8FC5 /* M80Functions.h */,
 				E4D3D3041AA190E700BA8FC5 /* M80Functions.m */,
+				E4D3D3131AA1A89300BA8FC5 /* M80FolderMonitor.h */,
+				E4D3D3141AA1A89300BA8FC5 /* M80FolderMonitor.m */,
 			);
 			path = Util;
 			sourceTree = "<group>";
@@ -419,6 +424,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8656473F19C728E5006B3581 /* NSURL+M80.m in Sources */,
+				E4D3D3151AA1A89300BA8FC5 /* M80FolderMonitor.m in Sources */,
 				E40AE74C1925E2F80062F86D /* NSFileManager+M80.m in Sources */,
 				E444950F193334DE00E62F56 /* M80Observer.m in Sources */,
 				E40AE7611925FB570062F86D /* UIActionSheet+M80.m in Sources */,

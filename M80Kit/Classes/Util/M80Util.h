@@ -16,6 +16,7 @@
 #import "M80WeakProxy.h"
 #import "M80XMLSerialization.h"
 #import "M80Functions.h"
+#import "M80FolderMonitor.h"
 
 
 #endif
