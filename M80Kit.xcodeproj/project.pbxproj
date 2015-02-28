@@ -53,6 +53,7 @@
 		E4CBD41A1A6620A200148F30 /* UIColor+M80.m in Sources */ = {isa = PBXBuildFile; fileRef = E4CBD4191A6620A200148F30 /* UIColor+M80.m */; };
 		E4D2939A1A63679B00563AD0 /* UITableView+M80.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D293991A63679B00563AD0 /* UITableView+M80.m */; };
 		E4D3D2FD1AA170EC00BA8FC5 /* UIResponder+M80.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D3D2FC1AA170EC00BA8FC5 /* UIResponder+M80.m */; };
+		E4D3D3051AA190E700BA8FC5 /* M80Functions.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D3D3041AA190E700BA8FC5 /* M80Functions.m */; };
 		E4F6A30C19CFE55100B97C5C /* M80XMLSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = E4F6A30B19CFE55100B97C5C /* M80XMLSerialization.m */; };
 		E4F84FB919A70EA100111E26 /* avatar.png in Resources */ = {isa = PBXBuildFile; fileRef = E4F84FB819A70EA100111E26 /* avatar.png */; };
 /* End PBXBuildFile section */
@@ -142,6 +143,8 @@
 		E4D3D2FB1AA170EC00BA8FC5 /* UIResponder+M80.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIResponder+M80.h"; sourceTree = "<group>"; };
 		E4D3D2FC1AA170EC00BA8FC5 /* UIResponder+M80.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIResponder+M80.m"; sourceTree = "<group>"; };
 		E4D3D3021AA1894900BA8FC5 /* M80Config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = M80Config.h; path = M80Kit/M80Config.h; sourceTree = SOURCE_ROOT; };
+		E4D3D3031AA190E700BA8FC5 /* M80Functions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = M80Functions.h; sourceTree = "<group>"; };
+		E4D3D3041AA190E700BA8FC5 /* M80Functions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = M80Functions.m; sourceTree = "<group>"; };
 		E4F6A30A19CFE55100B97C5C /* M80XMLSerialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = M80XMLSerialization.h; sourceTree = "<group>"; };
 		E4F6A30B19CFE55100B97C5C /* M80XMLSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = M80XMLSerialization.m; sourceTree = "<group>"; };
 		E4F84FB819A70EA100111E26 /* avatar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = avatar.png; sourceTree = "<group>"; };
@@ -196,6 +199,8 @@
 				E486E11A19483A6D00AE3455 /* M80Timer.m */,
 				E4F6A30A19CFE55100B97C5C /* M80XMLSerialization.h */,
 				E4F6A30B19CFE55100B97C5C /* M80XMLSerialization.m */,
+				E4D3D3031AA190E700BA8FC5 /* M80Functions.h */,
+				E4D3D3041AA190E700BA8FC5 /* M80Functions.m */,
 			);
 			path = Util;
 			sourceTree = "<group>";
@@ -432,6 +437,7 @@
 				E472EC041925B2CF00FD15F3 /* UIView+M80.m in Sources */,
 				E472EBFB1925B18900FD15F3 /* NSString+M80.m in Sources */,
 				E4CBD41A1A6620A200148F30 /* UIColor+M80.m in Sources */,
+				E4D3D3051AA190E700BA8FC5 /* M80Functions.m in Sources */,
 				E4AFE1CE192AEC1F00D5BCB7 /* M80MulticastDelegate.m in Sources */,
 				E43448761A5E36AB005D38D2 /* M80HttpManager.m in Sources */,
 			);
@@ -514,7 +520,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 			};
@@ -545,7 +551,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};

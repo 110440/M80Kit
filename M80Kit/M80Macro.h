@@ -23,3 +23,13 @@ green:((float)((rgbValue & 0x00FF0000) >> 16))/255.0 \
 blue:((float)(rgbValue & 0x0000FF00) >> 8)/255.0 \
 alpha:((float)(rgbValue & 0x000000FF))/255.0]
 
+
+#pragma mark - Perform Selector Leak Warning
+#define M80SuppressPerformSelectorLeakWarning(Stuff) \
+do { \
+_Pragma("clang diagnostic push") \
+_Pragma("clang diagnostic ignored \"-Warc-performSelector-leaks\"") \
+Stuff; \
+_Pragma("clang diagnostic pop") \
+} w
+
