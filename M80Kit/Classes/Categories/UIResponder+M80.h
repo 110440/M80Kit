@@ -9,5 +9,5 @@
 #import <UIKit/UIKit.h>
 
 @interface UIResponder (M80)
-- (void)m80_router:(id)data;
+- (void)m80Router:(id)data;
 @end

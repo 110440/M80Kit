@@ -28,7 +28,6 @@
 		E444950F193334DE00E62F56 /* M80Observer.m in Sources */ = {isa = PBXBuildFile; fileRef = E444950E193334DE00E62F56 /* M80Observer.m */; };
 		E472EBCF1925B10000FD15F3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E472EBCE1925B10000FD15F3 /* Foundation.framework */; };
 		E472EBD41925B10000FD15F3 /* M80Kit.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = E472EBD31925B10000FD15F3 /* M80Kit.h */; };
-		E472EBD61925B10000FD15F3 /* M80Kit.m in Sources */ = {isa = PBXBuildFile; fileRef = E472EBD51925B10000FD15F3 /* M80Kit.m */; };
 		E472EBDD1925B10000FD15F3 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E472EBDC1925B10000FD15F3 /* XCTest.framework */; };
 		E472EBDE1925B10000FD15F3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E472EBCE1925B10000FD15F3 /* Foundation.framework */; };
 		E472EBE01925B10000FD15F3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E472EBDF1925B10000FD15F3 /* UIKit.framework */; };
@@ -44,7 +43,6 @@
 		E472EC081925B72700FD15F3 /* NSData+M80.m in Sources */ = {isa = PBXBuildFile; fileRef = E472EBFD1925B29100FD15F3 /* NSData+M80.m */; };
 		E472EC091925B72900FD15F3 /* UIImage+M80.m in Sources */ = {isa = PBXBuildFile; fileRef = E472EC001925B2AE00FD15F3 /* UIImage+M80.m */; };
 		E472EC0A1925B72B00FD15F3 /* UIView+M80.m in Sources */ = {isa = PBXBuildFile; fileRef = E472EC031925B2CF00FD15F3 /* UIView+M80.m */; };
-		E472EC0B1925B72F00FD15F3 /* M80Kit.m in Sources */ = {isa = PBXBuildFile; fileRef = E472EBD51925B10000FD15F3 /* M80Kit.m */; };
 		E486E11B19483A6D00AE3455 /* M80Timer.m in Sources */ = {isa = PBXBuildFile; fileRef = E486E11A19483A6D00AE3455 /* M80Timer.m */; };
 		E486E11C19483A6D00AE3455 /* M80Timer.m in Sources */ = {isa = PBXBuildFile; fileRef = E486E11A19483A6D00AE3455 /* M80Timer.m */; };
 		E49C2D401A66378A0028BB8F /* M80NetworkConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = E49C2D3F1A66378A0028BB8F /* M80NetworkConfig.m */; };
@@ -113,7 +111,6 @@
 		E472EBCE1925B10000FD15F3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		E472EBD21925B10000FD15F3 /* M80Kit-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "M80Kit-Prefix.pch"; sourceTree = "<group>"; };
 		E472EBD31925B10000FD15F3 /* M80Kit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = M80Kit.h; sourceTree = "<group>"; };
-		E472EBD51925B10000FD15F3 /* M80Kit.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = M80Kit.m; sourceTree = "<group>"; };
 		E472EBDB1925B10000FD15F3 /* M80KitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = M80KitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E472EBDC1925B10000FD15F3 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		E472EBDF1925B10000FD15F3 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
@@ -144,6 +141,7 @@
 		E4D293E01A63B49500563AD0 /* M80Macro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = M80Macro.h; path = M80Kit/M80Macro.h; sourceTree = SOURCE_ROOT; };
 		E4D3D2FB1AA170EC00BA8FC5 /* UIResponder+M80.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIResponder+M80.h"; sourceTree = "<group>"; };
 		E4D3D2FC1AA170EC00BA8FC5 /* UIResponder+M80.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIResponder+M80.m"; sourceTree = "<group>"; };
+		E4D3D3021AA1894900BA8FC5 /* M80Config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = M80Config.h; path = M80Kit/M80Config.h; sourceTree = SOURCE_ROOT; };
 		E4F6A30A19CFE55100B97C5C /* M80XMLSerialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = M80XMLSerialization.h; sourceTree = "<group>"; };
 		E4F6A30B19CFE55100B97C5C /* M80XMLSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = M80XMLSerialization.m; sourceTree = "<group>"; };
 		E4F84FB819A70EA100111E26 /* avatar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = avatar.png; sourceTree = "<group>"; };
@@ -250,8 +248,8 @@
 			children = (
 				E472EBF61925B16200FD15F3 /* Classes */,
 				E472EBD31925B10000FD15F3 /* M80Kit.h */,
-				E472EBD51925B10000FD15F3 /* M80Kit.m */,
 				E4D293E01A63B49500563AD0 /* M80Macro.h */,
+				E4D3D3021AA1894900BA8FC5 /* M80Config.h */,
 				E472EBD11925B10000FD15F3 /* Supporting Files */,
 			);
 			path = M80Kit;
@@ -430,7 +428,6 @@
 				E472EC011925B2AE00FD15F3 /* UIImage+M80.m in Sources */,
 				E4D2939A1A63679B00563AD0 /* UITableView+M80.m in Sources */,
 				E40AE7661925FDD00062F86D /* M80TimerHolder.m in Sources */,
-				E472EBD61925B10000FD15F3 /* M80Kit.m in Sources */,
 				E40AE75D1925FB470062F86D /* UIAlertView+M80.m in Sources */,
 				E472EC041925B2CF00FD15F3 /* UIView+M80.m in Sources */,
 				E472EBFB1925B18900FD15F3 /* NSString+M80.m in Sources */,
@@ -446,7 +443,6 @@
 			files = (
 				E472EC0A1925B72B00FD15F3 /* UIView+M80.m in Sources */,
 				E4AFE1CF192AEC2A00D5BCB7 /* M80MulticastDelegate.m in Sources */,
-				E472EC0B1925B72F00FD15F3 /* M80Kit.m in Sources */,
 				E472EBEB1925B10000FD15F3 /* M80KitTests.m in Sources */,
 				E40AE7501925EC600062F86D /* FileManagerTests.m in Sources */,
 				E40AE75A1925F8CE0062F86D /* NSTimer+M80.m in Sources */,

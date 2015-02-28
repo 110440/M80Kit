@@ -7,10 +7,12 @@
 //
 
 #import "UIResponder+M80.h"
+#import "M80Config.h"
 
 @implementation UIResponder (M80)
-- (void)m80_router:(id)data
+- (void)m80Router:(id)data
 {
-    [[self nextResponder] m80_router:data];
+    M80Log(@"router %@",self);
+    [[self nextResponder] m80Router:data];
 }
 @end
