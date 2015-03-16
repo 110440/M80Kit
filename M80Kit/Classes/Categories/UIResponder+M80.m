@@ -13,4 +13,11 @@
 {
     [[self nextResponder] m80Router:data];
 }
+
+- (void)m80Router:(NSString *)eventName
+         userInfo:(NSDictionary *)userInfo
+{
+    [[self nextResponder] m80Router:eventName
+                           userInfo:userInfo];
+}
 @end

@@ -10,4 +10,7 @@
 
 @interface UIResponder (M80)
 - (void)m80Router:(id)data;
+
+- (void)m80Router:(NSString *)eventName
+         userInfo:(NSDictionary *)userInfo;
 @end
