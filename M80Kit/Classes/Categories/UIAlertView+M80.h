@@ -11,5 +11,5 @@
 typedef void (^M80UIAlertViewBlock)(NSInteger index);
 
 @interface UIAlertView (M80)
-- (void)showWithCompletion:(M80UIAlertViewBlock)block;
+- (void)m80ShowWithCompletion:(M80UIAlertViewBlock)block;
 @end

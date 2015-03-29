@@ -9,7 +9,7 @@
 #import "UIView+M80.h"
 
 @implementation UIView (M80)
-- (UIImage *)imageFromView
+- (UIImage *)m80ImageFromView
 {
     UIGraphicsBeginImageContextWithOptions(self.bounds.size, NO, [UIScreen mainScreen].scale);
     if ([self respondsToSelector:@selector(drawViewHierarchyInRect:afterScreenUpdates:)])

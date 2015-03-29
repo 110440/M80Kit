@@ -9,5 +9,5 @@
 
 
 @interface UIView (M80)
-- (UIImage *)imageFromView;
+- (UIImage *)m80ImageFromView;
 @end

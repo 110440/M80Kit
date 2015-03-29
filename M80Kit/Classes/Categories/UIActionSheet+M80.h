@@ -11,6 +11,6 @@
 typedef void (^M80UIActionSheetBlock)(NSInteger);
 
 @interface UIActionSheet (M80)
-- (void)showInView:(UIView *)view
- completionHandler:(M80UIActionSheetBlock)block;
+- (void)m80ShowInView:(UIView *)view
+    completionHandler:(M80UIActionSheetBlock)block;
 @end

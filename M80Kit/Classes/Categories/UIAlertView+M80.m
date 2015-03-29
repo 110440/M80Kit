@@ -9,25 +9,63 @@
 #import "UIAlertView+M80.h"
 #import <objc/runtime.h>
 
-static char kUIAlertViewBlockAddress;
+@interface M80AlertViewDelegate : NSObject<UIAlertViewDelegate>
+@property (nonatomic,strong)    NSMutableDictionary *dict;
+@end
 
-@implementation UIAlertView (M80)
-- (void)showWithCompletion:(M80UIAlertViewBlock)block
+@implementation M80AlertViewDelegate
++ (instancetype)sharedDelegate
 {
-    self.delegate = self;
-    objc_setAssociatedObject(self,&kUIAlertViewBlockAddress,block,OBJC_ASSOCIATION_COPY);
-    [self show];
+    static M80AlertViewDelegate *instance = nil;
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        instance = [[M80AlertViewDelegate alloc] init];
+    });
+    return instance;
 }
 
+- (instancetype)init
+{
+    if (self = [super init])
+    {
+        _dict = [NSMutableDictionary dictionary];
+    }
+    return self;
+}
+
+- (void)setBlock:(M80UIAlertViewBlock)block
+    forAlertView:(UIAlertView *)alertView
+{
+    NSString *description = [alertView description];
+    if (block && description)
+    {
+        [_dict setObject:[block copy]
+                  forKey:description];
+    }
+}
 
 - (void)alertView:(UIAlertView *)alertView didDismissWithButtonIndex:(NSInteger)buttonIndex
 {
-    M80UIAlertViewBlock block = objc_getAssociatedObject(self, &kUIAlertViewBlockAddress);
+    NSString *description = [alertView description];
+    M80UIAlertViewBlock block = [_dict objectForKey:description];
     if (block)
     {
         block(buttonIndex);
-        objc_setAssociatedObject(self,&kUIAlertViewBlockAddress,nil,OBJC_ASSOCIATION_COPY);
+        [_dict removeObjectForKey:description];
     }
+}
+
+
+@end
+
+
+@implementation UIAlertView (M80)
+- (void)m80ShowWithCompletion:(M80UIAlertViewBlock)block
+{
+    self.delegate = [M80AlertViewDelegate sharedDelegate];
+    [[M80AlertViewDelegate sharedDelegate] setBlock:block
+                                       forAlertView:self];
+    [self show];
 }
 
 @end
