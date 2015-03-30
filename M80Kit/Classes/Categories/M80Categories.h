@@ -20,4 +20,5 @@
 #import "UITableView+M80.h"
 #import "UIColor+M80.h"
 #import "UIResponder+M80.h"
+#import "NSObject+M80.h"
 #endif

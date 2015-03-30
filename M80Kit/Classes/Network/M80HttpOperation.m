@@ -8,6 +8,7 @@
 
 #import "M80HttpOperation.h"
 
+static NSString *const M80HttpDomain = @"M80HttpDomain";
 
 @interface M80HttpThread : NSObject
 @end
@@ -70,7 +71,7 @@
             dispatch_async(dispatch_get_main_queue(), ^{
                 if (self.failure)
                 {
-                    NSError *error = [NSError errorWithDomain:@"M80HttpDomain"
+                    NSError *error = [NSError errorWithDomain:M80HttpDomain
                                                          code:M80HttpCodeInvalidRequest
                                                      userInfo:nil];
                     self.failure(self,error);
@@ -139,7 +140,7 @@ didReceiveResponse:(NSURLResponse *)response
     }
     else
     {
-        NSError *error = [NSError errorWithDomain:@"M80HttpDomain"
+        NSError *error = [NSError errorWithDomain:M80HttpDomain
                                              code:M80HttpCodeInvalidResponse
                                          userInfo:nil];
         @synchronized(self)
