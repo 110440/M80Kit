@@ -129,6 +129,8 @@
     SEL selector = [invocation selector];
     BOOL hasNilDelegate = NO;
     
+    NSMutableArray *nodeDelegates = [NSMutableArray array];
+    
     for (M80DelegateNode *node in _delegateNodes)
     {
         id nodeDelegate = node.nodeDelegate;
@@ -139,13 +141,17 @@
         }
         else if ([nodeDelegate respondsToSelector:selector])
         {
-            [invocation invokeWithTarget:nodeDelegate];
+            [nodeDelegates addObject:nodeDelegate];
         }
     }
     
     if (hasNilDelegate)
     {
         [self removeDelegate:nil];
+    }
+    for (id nodeDelegate in nodeDelegates)
+    {
+        [invocation invokeWithTarget:nodeDelegate];
     }
 }
 
